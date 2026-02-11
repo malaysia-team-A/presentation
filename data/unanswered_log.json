@@ -1,0 +1,36 @@
+{
+  "unanswered": [],
+  "low_confidence": [
+    {
+      "id": 1,
+      "timestamp": "2026-02-05T16:10:11.430827",
+      "question": "say my DOB and grade",
+      "confidence": 0.0,
+      "response": "🔒 Security Check: Please enter your password to view examination results."
+    },
+    {
+      "id": 2,
+      "timestamp": "2026-02-06T10:30:38.131569",
+      "question": "What programs does UCSI offer?",
+      "confidence": 0.0,
+      "response": "I apologize, but I encountered an error generating a response."
+    },
+    {
+      "id": 3,
+      "timestamp": "2026-02-06T10:30:38.672580",
+      "question": "hello",
+      "confidence": 0.0,
+      "response": "I apologize, but I encountered an error generating a response."
+    },
+    {
+      "id": 4,
+      "timestamp": "2026-02-06T11:50:42.136820",
+      "question": "hello",
+      "confidence": 0.0,
+      "response": "Hello there!"
+    }
+  ],
+  "stats": {
+    "total_issues": 4
+  }
+}

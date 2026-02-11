@@ -1,0 +1,67 @@
+id,scope,type,source,query,status,latency,outer_type,passed,reason,failed_checks,response
+1,guest,rag_exact,rag_accuracy,Where is Block A?,OK,2.068,message,True,ok,,Block A is in Kuala Lumpur.
+6,guest,rag_negative,rag_accuracy,What is the fee for the Mars Campus?,OK,2.061,message,True,ok,,The database has no information for this request.
+4,guest,rag_exact,rag_accuracy,What time does the library close?,OK,3.471,message,True,ok,,The database has no information for library details.
+8,guest,rag_negative,rag_accuracy,What is the tuition for Jedi training?,OK,2.242,message,True,ok,,The database has no information for this request.
+7,guest,rag_negative,rag_accuracy,Who is Professor Spiderman?,OK,2.344,message,True,ok,,The database has no information for this request.
+2,guest,rag_exact,rag_accuracy,How much is the hostel fee?,OK,6.751,message,True,ok,,"The hostel fee ranges from RM 650 to RM 1200, depending on the room type and building. The deposit ranges from RM 1000 to RM 2000. Here are some examples: Park Lane (Twin Sharing) costs RM 700 with a RM 1400 deposit, whi"
+3,guest,rag_exact,rag_accuracy,What is the tuition fee for Computer Science?,OK,6.86,message,True,ok,,"The tuition fee for Bachelor of Computer Science in Data Science with Honours is RM 94,195 for local students and RM 114,772.80 for international students. The fee for Bachelor of Computer Science (Hons) Mobile Computing"
+5,guest,rag_exact,rag_accuracy,Do you have a shuttle bus service?,OK,8.582,message,True,ok,,"Yes, the Park Lane hostel in Kuching offers a Shuttle Service. It is an On-Campus hostel with Twin Sharing rooms available for RM 700 per month, with a deposit of RM 1400."
+10,guest,rag_exact,rag_accuracy,Is there a gym on campus?,OK,5.288,message,True,ok,,"Yes, there is a Gym & Pool located at Block E / R2. It is free for students and is open from 07:00 to 22:00. It's categorized under Fitness and is for exercise and swimming."
+9,guest,rag_exact,rag_accuracy,List all engineering majors,OK,6.249,message,True,ok,,"UCSI College offers the following engineering majors: Bachelor of Engineering (Honours) Electrical and Electronic Engineering, Bachelor of Engineering (Honours) Mechanical Engineering, Bachelor of Engineering (Honours) C"
+11,guest,rag_exact,rag_accuracy,How do I apply for a scholarship?,OK,5.968,message,True,ok,,Scholarship details: Programme: Foundation in Science (Medical Sciences); Fields of Study: Medicine and Health Sciences; Course Duration: 1 year; Course Mode: Full-time
+13,guest,rag_exact,rag_accuracy,Who is the Vice Chancellor?,OK,6.695,message,True,ok,,The database has no information for Vice Chancellor details.
+12,guest,rag_exact,rag_accuracy,When is the next intake for 2026?,OK,10.177,message,True,ok,,"For the BSc (Hons) Aquatic Science programme, intakes are in January, May and September. I don't have information about intakes for other programmes. Release of Results (Jan-Apr Sem) will be on 14-05-2026 for general pro"
+14,guest,rag_exact,rag_accuracy,Is there a cafeteria on campus?,OK,8.65,message,True,ok,,"Campus cafeteria/food/dining details: KK Super Mart: category: Convenience, location: South Campus, price_info: Standard, opening_hours: 24 Hours, tags: essentials, cheap, 24/7"
+15,guest,rag_exact,rag_accuracy,What is the address of the campus?,OK,8.663,message,True,ok,,Campus address/location details: There are multiple campuses listed.
+17,guest,rag_exact,rag_accuracy,Do you accept international students?,OK,8.623,message,True,ok,,"Yes, UCSI University accepts international students. For the Bachelor in International Business (Honours), international student fees are RM 95,374.80. The Bachelor of International and Sustainable Business (Honours) cos"
+16,guest,rag_exact,rag_accuracy,Do you offer PhD programs?,OK,9.649,message,True,ok,,"PhD/doctoral programme details: Programme: Bachelor of Electrical and Electronics Engineering with Honours; Fields of Study: Engineering; Course Duration: 1 Year / 3 Semesters (14 weeks per semester, no short semester); "
+18,guest,rag_exact,rag_accuracy,Is there a swimming pool?,OK,6.156,message,True,ok,,"Yes, there is a swimming pool. It is located in Block E / R2 and is free for students. The gym and pool are open from 07:00 to 22:00."
+21,guest,rag_negative,rag_accuracy,Where is the UFO landing pad?,OK,2.08,message,True,ok,,The database has no information for this request.
+20,guest,rag_exact,rag_accuracy,What are the entry requirements for Diploma in IT?,OK,3.538,message,True,ok,,"| Programme: Diploma in Fashion Design | Fields of Study: Creative Arts and Design | Course Duration: 2.5 Years | Course Mode: Full-time | Course Location: Kuala Lumpur | Intakes: January, May and September | Local Stude"
+22,guest,rag_negative,rag_accuracy,Tell me about the Moon campus tuition,OK,2.058,message,True,ok,,The database has no information for this request.
+19,guest,rag_exact,rag_accuracy,Where can I print documents?,OK,5.405,message,True,ok,,"Printing details: Address: 1, Jalan Puncak Menara Gading, UCSI Heights, 56000 Cheras, Wilayah Persekutuan Kuala Lumpur; Name: Block B; BLOCK B_BUIILDING: https://drive.google.com/file/d/1bBXk0xtR2f-UIazpfuf_x6d1CCk97Fzr/"
+rw_01_block_a_followup,guest,rag_exact,rag_real_world,can you tell me about block A?,OK,2.958,message,True,ok,,"Block A: Name: Block A, Address: Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia, Latitude: 3.077331, Longitude: 101.737711, BLOCK A_BUILDING: [link] BLOCK A_MAP: [link]"
+24,guest,rag_exact,rag_accuracy,Is accommodation guaranteed for first year students?,OK,4.03,message,True,ok,,"Accommodation/hostel details: | room_type: Twin Sharing | building: Park Lane | campus: Kuching | category: On-Campus | rent_price: 700 | deposit: 1400 | features: Shuttle Service, Near City Centre | ac: True"
+23,guest,rag_exact,rag_accuracy,Is there a prayer room?,OK,4.427,message,True,ok,,"Prayer room details: | room_type: Single Room | building: Hospital Residence | campus: Springhill | category: On-Campus | rent_price: 1200 | deposit: 2000 | features: Near UCSI Hospital, Healthcare focus | ac: True"
+rw_03_it_faculty_head,guest,rag_exact,rag_real_world,Who is the head of the IT faculty?,OK,2.932,message,True,ok,,"Professor Ts Dr Shayla Islam: role: Director ; Head of Research, major: Institute of Computer Science and Digital Innovation, email: shayla@ucsiuniversity.edu.my, profile_url: https://www.ucsiuniversity.edu.my/professor-"
+25,guest,rag_exact,rag_accuracy,Can I pay fees in installments?,OK,4.993,message,True,ok,,"Installment payment details: | Programme: BSc (Hons) Forensic Science | Fields of Study: Applied Sciences | Course Duration: 3 years | Course Mode: Full-time | Course Location: Kuala Lumpur | Intakes: January, May and Se"
+rw_02_print_documents,guest,rag_exact,rag_real_world,Where can I print documents?,OK,4.379,message,True,ok,,"Printing details: | Name: Block B | Address: 1, Jalan Puncak Menara Gading, UCSI Heights, 56000 Cheras, Wilayah Persekutuan Kuala Lumpur | BLOCK B_BUIILDING: [link] | Latitude: 3.07969876 | Longitude: 101.73309098 | BLOC"
+rw_04_route_b_bus,guest,rag_exact,rag_real_world,Bus schedule for Route B,OK,3.079,message,True,ok,,The database has no information for shuttle bus route schedule details.
+rw_05_programme_scope,guest,rag_exact,rag_real_world,What programs does UCSI offer?,OK,3.234,message,True,ok,,"| Programme: Bachelor of Electrical and Electronics Engineering with Honours | Fields of Study: Engineering | Course Duration: 1 Year / 3 Semesters (14 weeks per semester, no short semester) | Course Mode: Full-time | Co"
+rw_06_library_gap,guest,rag_negative,rag_real_world,What time does the library close?,OK,3.218,message,True,ok,,The database has no information for library details.
+rw_08_spiderman_guard,guest,rag_negative,rag_real_world,Who is Professor Spiderman?,OK,2.082,message,True,ok,,The database has no information for this request.
+1,guest,factual,general_knowledge,Who is Albert Einstein?,OK,2.101,message,True,ok,,Albert Einstein was a theoretical physicist best known for the theory of relativity.
+3,guest,factual,general_knowledge,What is the capital of France?,OK,2.051,message,True,ok,,The capital of France is Paris.
+4,guest,factual,general_knowledge,What is photosynthesis?,OK,2.057,message,True,ok,,"Photosynthesis is the process plants use to convert sunlight, water, and carbon dioxide into energy."
+rw_07_vc_gap,guest,rag_negative,rag_real_world,Who is the Vice Chancellor?,OK,4.208,message,True,ok,,The database has no information for Vice Chancellor details.
+5,guest,mathematical,general_knowledge,What is 2 + 2?,OK,2.185,message,True,ok,,The answer is 4.
+2,guest,factual,general_knowledge,Who painted the Mona Lisa?,OK,3.269,message,True,ok,,The Mona Lisa was painted by Leonardo da Vinci.
+6,guest,factual,general_knowledge,What is Python programming?,OK,2.547,message,True,ok,,"Python is a high-level programming language known for readable syntax and broad use in web, data, and AI."
+7,guest,factual,general_knowledge,What is the speed of light?,OK,2.454,message,True,ok,,"The speed of light in vacuum is about 299,792,458 meters per second."
+9,guest,factual,general_knowledge,What is the largest ocean?,OK,2.055,message,True,ok,,The Pacific Ocean is the largest ocean on Earth.
+11,guest,factual,general_knowledge,What is the formula for water?,OK,2.38,message,True,ok,,The chemical formula for water is H2O.
+12,guest,factual,general_knowledge,What is the tallest mountain?,OK,2.383,message,True,ok,,Mount Everest is the tallest mountain above sea level.
+8,guest,factual,general_knowledge,How many continents are there?,OK,3.51,message,True,ok,,There are seven continents.
+10,guest,factual,general_knowledge,Who wrote Romeo and Juliet?,OK,2.998,message,True,ok,,Romeo and Juliet was written by William Shakespeare.
+13,guest,factual,general_knowledge,What is machine learning?,OK,2.168,message,True,ok,,Machine learning is a branch of AI where algorithms learn patterns from data to make predictions or decisions.
+14,guest,factual,general_knowledge,What is the capital of Italy?,OK,2.192,message,True,ok,,The capital of Italy is Rome.
+15,guest,factual,general_knowledge,What is a black hole?,OK,2.148,message,True,ok,,A black hole is a region in space where gravity is so strong that even light cannot escape.
+16,guest,factual,general_knowledge,What is the currency of Japan?,OK,2.139,message,True,ok,,The currency of Japan is the Japanese yen.
+18,guest,factual,general_knowledge,What is the meaning of life?,OK,2.284,message,True,ok,,"The meaning of life is a personal and philosophical question; many people frame it around purpose, relationships, and growth."
+17,guest,creative,general_knowledge,Translate 'Hello' to French,OK,3.179,message,True,ok,,"In French, 'Hello' is 'Bonjour'."
+20,guest,factual,general_knowledge,Who won the World Cup in 2022?,OK,2.068,message,True,ok,,Argentina won the 2022 FIFA World Cup.
+19,guest,practical,general_knowledge,How do I cook pasta?,OK,2.983,message,True,ok,,"Boil salted water, cook pasta until al dente, drain, then add sauce."
+auth_01_guest_personal_gate,guest,auth_guard,strict_auth_intent,where am I from?,OK,2.036,login_hint,True,ok,,Please login to access personal information.
+auth_02_auth_nationality_only,auth,personal_scope,strict_auth_intent,where am I from?,OK,2.218,message,True,ok,,NATIONALITY: China
+auth_03_auth_grade_requires_2fa,auth,auth_guard,strict_auth_intent,can you tell me about my GPA?,OK,2.093,password_prompt,True,ok,,Security check required: Please enter your password to view examination results.
+auth_04_auth_profile_safe_summary,auth,personal_scope,strict_auth_intent,can you tell me about my information?,OK,2.147,message,True,ok,,"STUDENT_NUMBER: 5004273609
+STUDENT_NAME: Gomana Wern Rou
+NATIONALITY: China
+GENDER: Female
+PROGRAMME_NAME: Bachelor of Computer Science (Honours)
+PROGRAMME_CODE: BCICS
+PROFILE_STATUS: Active
+PROFILE_TYPE: Student
+INTAKE:"
+auth_05_guest_general_no_auth_prompt,guest,general_guard,strict_auth_intent,What is Python programming?,OK,2.219,message,True,ok,,"Python is a high-level programming language known for readable syntax and broad use in web, data, and AI."

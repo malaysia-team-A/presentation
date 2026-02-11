@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Code Captures for PPT</title>
+    <!-- Highlight.js for syntax highlighting -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+
+        h1 {
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .capture-container {
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .capture-label {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #61afef;
+            font-weight: bold;
+        }
+
+        .code-window {
+            background-color: #282c34;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            border: 1px solid #3e4451;
+        }
+
+        .window-header {
+            background-color: #21252b;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #181a1f;
+        }
+
+        .window-controls {
+            display: flex;
+            gap: 8px;
+            margin-right: 15px;
+        }
+
+        .control {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .close {
+            background-color: #ff5f56;
+        }
+
+        .minimize {
+            background-color: #ffbd2e;
+        }
+
+        .maximize {
+            background-color: #27c93f;
+        }
+
+        .filename {
+            color: #abb2bf;
+            font-size: 0.9rem;
+            font-family: 'Consolas', 'Monaco', monospace;
+        }
+
+        pre {
+            margin: 0;
+            padding: 0;
+        }
+
+        code {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+            font-size: 14px;
+            line-height: 1.5;
+            padding: 20px !important;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #21252b;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #4b5263;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #5c6370;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Project Code Captures for PPT</h1>
+    <p style="text-align: center; max-width: 600px;">
+        Use a screenshot tool (Win+Shift+S) to capture each block below for your presentation.
+    </p>
+
+    <!-- 1. Feedback / Self-Learning -->
+    <div class="capture-container">
+        <div class="capture-label">1. Feedback System (Self-Learning Logic)</div>
+        <div class="code-window">
+            <div class="window-header">
+                <div class="window-controls">
+                    <div class="control close"></div>
+                    <div class="control minimize"></div>
+                    <div class="control maximize"></div>
+                </div>
+                <div class="filename">app/engines/db_engine_async.py</div>
+            </div>
+            <pre><code class="language-python">    async def save_learned_response(self, query: str, answer: str) -> bool:
+        """
+        Saves a positive interaction as a learned pattern for future queries.
+        This enables the self-learning capability of the chatbot.
+        """
+        if self.db is None:
+            return False
+        try:
+            meta = self.query_metadata(query)
+            query_norm = meta["query_norm"] or str(query or "").strip().lower()
+            now = datetime.now()
+
+            # Canonical memory path: keep learned signal in Feedback collection
+            # This allows the system to prioritize verified answers in future
+            await self.db[FEEDBACK_COLLECTION].update_one(
+                {"query_norm": query_norm, "rating": "positive"},
+                {
+                    "$set": {
+                        "user_message": str(query or "").strip(),
+                        "ai_response": str(answer or "").strip(),
+                        "rating": "positive",
+                        "reward": 1.0,  # Reinforcement signal
+                        "query_norm": query_norm,
+                        "query_tokens": meta["query_tokens"],
+                        "memory_source": "learned_positive_feedback",
+                        "timestamp": now,
+                    },
+                    "$setOnInsert": {
+                        "session_id": "system_memory",
+                        "comment": "Auto-promoted from positive feedback",
+                    },
+                },
+                upsert=True,
+            )
+            return True
+        except Exception as e:
+            print(f"Learned response save error: {e}")
+            return False</code></pre>
+        </div>
+    </div>
+
+    <!-- 2. DB Connection -->
+    <div class="capture-container">
+        <div class="capture-label">2. Database Connection (MongoDB Async)</div>
+        <div class="code-window">
+            <div class="window-header">
+                <div class="window-controls">
+                    <div class="control close"></div>
+                    <div class="control minimize"></div>
+                    <div class="control maximize"></div>
+                </div>
+                <div class="filename">app/engines/db_engine_async.py</div>
+            </div>
+            <pre><code class="language-python">    async def connect(self):
+        """Establish asynchronous connection to MongoDB Atlas"""
+        try:
+            uri = Config.MONGO_URI
+            if not uri:
+                print("Error: MONGO_URI not found in .env")
+                return
+
+            # Initialize Motor Async Client
+            self.client = motor.motor_asyncio.AsyncIOMotorClient(
+                uri, 
+                serverSelectionTimeoutMS=5000
+            )
+            
+            # Verify connection with ping
+            await self.client.admin.command('ping')
+            
+            # Connect to specific database
+            db_name = uri.split('/')[-1].split('?')[0] or "UCSI_DB"
+            self.db = self.client[db_name]
+            print(f"[AsyncDB] Successfully connected to MongoDB: {db_name}")
+
+            # Initialize runtime indexes for performance
+            await self._ensure_runtime_indexes()
+            
+        except Exception as e:
+            print(f"[AsyncDB][ERROR] Database connection failed: {e}")</code></pre>
+        </div>
+    </div>
+
+    <!-- 3. Chatbot Logic -->
+    <div class="capture-container">
+        <div class="capture-label">3. Chatbot Service Logic (Clean Architecture)</div>
+        <div class="code-window">
+            <div class="window-header">
+                <div class="window-controls">
+                    <div class="control close"></div>
+                    <div class="control minimize"></div>
+                    <div class="control maximize"></div>
+                </div>
+                <div class="filename">app/api/chat.py</div>
+            </div>
+            <pre><code class="language-python">@router.post("/chat")
+async def chat(body: ChatRequest, request: Request):
+    """
+    Main chat endpoint implementing the service logic.
+    Flow: Auth -> Sanitize -> Classify Intent -> Route -> Validate -> Respond
+    """
+    async with Monitor.request("chat") as monitor:
+        # 1. Parse & Authenticate
+        user = decode_access_token(token) if token else None
+        session_key, conversation_id, _ = _resolve_session(user, body)
+        
+        # 2. Classify Intent (Hybrid: Keyword + Semantic)
+        classification = await intent_classifier.classify(
+            user_message=user_msg,
+            conversation_history=history,
+            language=user_lang
+        )
+        category = classification.get("category", "unknown")
+
+        # 3. Route to specific handler based on intent
+        if category == "personal":
+            # Handles queries about own profile, grades (requires Auth)
+            result = await handle_personal_query(user, user_msg, ...)
+            
+        elif category == "ucsi_domain":
+            # Handles General/University queries using RAG
+            result = await handle_ucsi_query(user_msg, classification, ...)
+            
+        else:
+            # Handles general conversational knowledge
+            result = await handle_general_query(user_msg, ...)
+
+        # 4. Return formatted response
+        return {
+            "response": json.dumps(result),
+            "session_id": conversation_id,
+            "type": "message"
+        }</code></pre>
+        </div>
+    </div>
+
+    <!-- 4. RAG Implementation -->
+    <div class="capture-container">
+        <div class="capture-label">4. RAG Implementation (Retrieval Augmented Generation)</div>
+        <div class="code-window">
+            <div class="window-header">
+                <div class="window-controls">
+                    <div class="control close"></div>
+                    <div class="control minimize"></div>
+                    <div class="control maximize"></div>
+                </div>
+                <div class="filename">app/engines/rag_engine_async.py</div>
+            </div>
+            <pre><code class="language-python">    async def search_context(self, query: str, top_k: int = 5) -> Dict[str, Any]:
+        """
+        Retrieves relevant context for RAG:
+        1. Vector search in FAISS index
+        2. Learned/Verified answers from DB
+        3. Merges results for the LLM
+        """
+        # Run vector search in thread pool (CPU bound)
+        loop = asyncio.get_running_loop()
+        base_result = await loop.run_in_executor(
+            self.executor,
+            lambda: _sync_rag_engine.search(query=query, n_results=top_k)
+        )
+
+        # Check for learned/verified answers (Self-learning priority)
+        learned_answer = await db_engine_async.search_learned_response(str(query))
+        
+        # Merge contexts
+        context = str(base_result.get("context") or "")
+        if learned_answer:
+            # Prioritize learned answer in the context window
+            learned_ctx = f"[Verified Answer]\n{learned_answer} [conf:1.00]"
+            context = f"{learned_ctx}\n\n{context}"
+
+        return {
+            "context": context,
+            "has_relevant_data": True,
+            "confidence": max(float(base_result.get("confidence") or 0.0), 1.0),
+            "sources": base_result.get("sources", [])
+        }</code></pre>
+        </div>
+    </div>
+
+    <!-- 5. LLM Connection -->
+    <div class="capture-container">
+        <div class="capture-label">5. LLM Connection & Prompting</div>
+        <div class="code-window">
+            <div class="window-header">
+                <div class="window-controls">
+                    <div class="control close"></div>
+                    <div class="control minimize"></div>
+                    <div class="control maximize"></div>
+                </div>
+                <div class="filename">app/engines/ai_engine_async.py</div>
+            </div>
+            <pre><code class="language-python">    async def process_message(self, user_message: str, data_context: str, ...) -> dict:
+        """
+        Generates response using Google Gemini LLM with RAG context.
+        """
+        # Construct System Prompt with Context
+        prompt = f"""You are UCSI Buddy, a helpful AI assistant.
+
+## Context (Database Information)
+{data_context}
+
+## Conversation History
+{conversation_text}
+
+## Current Question
+{user_message}
+
+## Response Guidelines
+1. Grounding: Base answer ONLY on Context.
+2. Tone: Helpful and professional.
+"""
+        # Call LLM API with Resilience (Circuit Breaker)
+        if not await _circuit_breaker.can_execute():
+             return {"response": "Service paused."}
+
+        try:
+            response = await self.client.aio.models.generate_content(
+                model=self.model_name,
+                contents=prompt
+            )
+            return {"response": response.text}
+        except Exception as e:
+            await _circuit_breaker.record_failure()
+            raise e</code></pre>
+        </div>
+    </div>
+
+    <!-- 6. Auth System -->
+    <div class="capture-container">
+        <div class="capture-label">6. Authentication System</div>
+        <div class="code-window">
+            <div class="window-header">
+                <div class="window-controls">
+                    <div class="control close"></div>
+                    <div class="control minimize"></div>
+                    <div class="control maximize"></div>
+                </div>
+                <div class="filename">app/api/auth.py</div>
+            </div>
+            <pre><code class="language-python">@router.post("/login")
+async def login(request: LoginRequest):
+    """
+    Handles student authentication and JWT token generation.
+    """
+    student = await db_engine_async.get_student_by_number(request.student_number)
+    
+    # 1. Validate Student Exists
+    if not student:
+        return JSONResponse(status_code=401, content={"message": "Invalid credentials"})
+
+    # 2. Validate Name Match (Simple verification for students)
+    db_name = _resolve_student_name(student)
+    if not db_name or db_name.lower() != input_name.lower():
+        return JSONResponse(status_code=401, content={"message": "Invalid credentials"})
+
+    # 3. Generate JWT Access Token
+    access_token_expires = timedelta(minutes=60)
+    access_token = create_access_token(
+        data={
+            "sub": student_number,
+            "role": "student",
+            "name": db_name
+        },
+        expires_delta=access_token_expires,
+    )
+
+    return {
+        "success": True,
+        "token": access_token,
+        "token_type": "bearer",
+        "user": {"name": db_name, "student_number": student_number}
+    }</code></pre>
+        </div>
+    </div>
+
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>

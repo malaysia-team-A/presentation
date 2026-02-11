@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "question": "can you tell me about block A?",
+    "context": "",
+    "reason": "negative_feedback",
+    "timestamp": "2026-02-06T17:40:29.306584",
+    "resolved": false
+  },
+  {
+    "id": 2,
+    "question": "What time does the library close?",
+    "context": "",
+    "reason": "low_context",
+    "timestamp": "2026-02-07T00:42:43.809830",
+    "resolved": false
+  },
+  {
+    "id": 3,
+    "question": "Who is Professor Spiderman?",
+    "context": "",
+    "reason": "low_context",
+    "timestamp": "2026-02-07T00:42:44.598010",
+    "resolved": false
+  },
+  {
+    "id": 4,
+    "question": "What is the fee for the Mars Campus?",
+    "context": "",
+    "reason": "low_context",
+    "timestamp": "2026-02-07T00:42:44.782081",
+    "resolved": false
+  },
+  {
+    "id": 5,
+    "question": "Tell me about the Moon campus tuition",
+    "context": "",
+    "reason": "low_context",
+    "timestamp": "2026-02-07T00:42:44.817822",
+    "resolved": false
+  },
+  {
+    "id": 6,
+    "question": "What time does the library close?",
+    "context": "",
+    "reason": "low_context",
+    "timestamp": "2026-02-07T00:44:02.817042",
+    "resolved": false
+  },
+  {
+    "id": 7,
+    "question": "Who is Professor Spiderman?",
+    "context": "",
+    "reason": "low_context",
+    "timestamp": "2026-02-07T00:44:03.589054",
+    "resolved": false
+  },
+  {
+    "id": 8,
+    "question": "What is the fee for the Mars Campus?",
+    "context": "",
+    "reason": "low_context",
+    "timestamp": "2026-02-07T00:44:03.684234",
+    "resolved": false
+  },
+  {
+    "id": 9,
+    "question": "Tell me about the Moon campus tuition",
+    "context": "",
+    "reason": "low_context",
+    "timestamp": "2026-02-07T00:44:03.835157",
+    "resolved": false
+  },
+  {
+    "id": 10,
+    "question": "Bus schedule for Route Z",
+    "context": "too generic",
+    "reason": "negative_feedback",
+    "timestamp": "2026-02-08T22:52:22.288829",
+    "resolved": false
+  },
+  {
+    "id": 11,
+    "question": "NEG_TEST_001",
+    "context": "test",
+    "reason": "negative_feedback",
+    "timestamp": "2026-02-08T22:53:58.420528",
+    "resolved": false
+  },
+  {
+    "id": 12,
+    "question": "NEG_TEST_002",
+    "context": "wrong",
+    "reason": "negative_feedback",
+    "timestamp": "2026-02-08T22:57:39.784776",
+    "resolved": false
+  },
+  {
+    "id": 13,
+    "question": "NEG_TEST_003",
+    "context": "wrong",
+    "reason": "negative_feedback",
+    "timestamp": "2026-02-08T23:00:20.344000",
+    "resolved": false
+  },
+  {
+    "id": 14,
+    "question": "니 이름이 왜 카이냐고",
+    "context": "",
+    "reason": "negative_feedback",
+    "timestamp": "2026-02-08T23:05:38.566393",
+    "resolved": false
+  }
+]

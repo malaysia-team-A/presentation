@@ -1,0 +1,73 @@
+id,scope,type,source,query,status,latency,outer_type,passed,reason,failed_checks,response
+2,guest,rag_exact,rag_accuracy,How much is the hostel fee?,OK,7.236,message,False,"missing_expected_any:['rm', 'hostel', 'fee']; rag_exact_returned_no_data","missing_expected_any:['rm', 'hostel', 'fee']|rag_exact_returned_no_data","I could not find reliable information in the current UCSI knowledge base. Please ask with specific keywords (programme name, block, intake, staff role), or request a data update."
+4,guest,rag_exact,rag_accuracy,What time does the library close?,OK,27.785,message,False,missing_expected_any:['library'],missing_expected_any:['library'],"I could not find reliable information in the current UCSI knowledge base. Please ask with specific keywords (programme name, block, intake, staff role), or request a data update."
+1,guest,rag_exact,rag_accuracy,Where is Block A?,TIMEOUT,35.01,error,False,request_error,TIMEOUT,timeout
+5,guest,rag_exact,rag_accuracy,Do you have a shuttle bus service?,OK,28.601,message,True,ok,,"I don't have information about a shuttle bus service. I can tell you about laundry services though. There's a professional laundry service in Block E (RM 5 per kg, 09:00-19:00) and a self-service coin laundry in Block D "
+3,guest,rag_exact,rag_accuracy,What is the tuition fee for Computer Science?,TIMEOUT,37.038,error,False,request_error,TIMEOUT,timeout
+6,guest,rag_negative,rag_accuracy,What is the fee for the Mars Campus?,OK,18.546,message,True,ok,,"I could not find reliable information in the current UCSI knowledge base. Please ask with specific keywords (programme name, block, intake, staff role), or request a data update."
+8,guest,rag_negative,rag_accuracy,What is the tuition for Jedi training?,OK,27.75,message,False,negative_test_missing_refusal,negative_test_missing_refusal,"That's a fun question! However, I'm the UCSI Buddy and I can only provide information about UCSI University. I don't have any information about Jedi training tuition fees. Perhaps you could try searching online for a Jed"
+7,guest,rag_negative,rag_accuracy,Who is Professor Spiderman?,TIMEOUT,37.041,error,False,request_error,TIMEOUT,timeout
+10,guest,rag_exact,rag_accuracy,Is there a gym on campus?,OK,26.277,message,True,ok,,"Yes, there is a gym and pool located at Block E / R2. It's free for students and open from 07:00 to 22:00."
+9,guest,rag_exact,rag_accuracy,List all engineering majors,TIMEOUT,37.05,error,False,request_error,TIMEOUT,timeout
+14,guest,rag_exact,rag_accuracy,Is there a cafeteria on campus?,OK,17.297,message,False,"missing_expected_any:['cafeteria', 'food', 'dining']; rag_exact_returned_no_data","missing_expected_any:['cafeteria', 'food', 'dining']|rag_exact_returned_no_data","I could not find reliable information in the current UCSI knowledge base. Please ask with specific keywords (programme name, block, intake, staff role), or request a data update."
+12,guest,rag_exact,rag_accuracy,When is the next intake for 2026?,OK,19.427,message,False,rag_exact_returned_no_data,rag_exact_returned_no_data,"I could not find reliable information in the current UCSI knowledge base. Please ask with specific keywords (programme name, block, intake, staff role), or request a data update."
+11,guest,rag_exact,rag_accuracy,How do I apply for a scholarship?,TIMEOUT,35.001,error,False,request_error,TIMEOUT,timeout
+13,guest,rag_exact,rag_accuracy,Who is the Vice Chancellor?,OK,34.091,message,False,missing_expected_any:['vice chancellor'],missing_expected_any:['vice chancellor'],I encountered an error processing your request.
+16,guest,rag_exact,rag_accuracy,Do you offer PhD programs?,OK,25.602,message,True,ok,,"Yes, we do. The International Institute of Science Diplomacy and Sustainability offers a PHD Science Diplomacy and Sustainability programme. Professor Dr Mohamad Osman is the Head of Programme."
+15,guest,rag_exact,rag_accuracy,What is the address of the campus?,OK,25.695,message,True,ok,,"I'm sorry, I don't have the address of the campus in my current knowledge base. However, I can help with information about KK Super Mart located on South Campus."
+17,guest,rag_exact,rag_accuracy,Do you accept international students?,OK,32.935,message,True,ok,,"Yes, UCSI University accepts international students. For example, the Bachelor in International Business (Honours) has a fee of RM 95,374.80 for international students. Would you like to know about fees for other program"
+18,guest,rag_exact,rag_accuracy,Is there a swimming pool?,OK,28.596,message,True,ok,,"Yes, there is a swimming pool at the Gym & Pool in Block E / R2. It's free for students and open from 07:00 to 22:00."
+19,guest,rag_exact,rag_accuracy,Where can I print documents?,TIMEOUT,35.011,error,False,request_error,TIMEOUT,timeout
+20,guest,rag_exact,rag_accuracy,What are the entry requirements for Diploma in IT?,TIMEOUT,35.01,error,False,request_error,TIMEOUT,timeout
+21,guest,rag_negative,rag_accuracy,Where is the UFO landing pad?,OK,28.516,message,False,contains_forbidden:['block'],contains_forbidden:['block'],"I could not find reliable information in the current UCSI knowledge base. Please ask with specific keywords (programme name, block, intake, staff role), or request a data update."
+22,guest,rag_negative,rag_accuracy,Tell me about the Moon campus tuition,TIMEOUT,35.003,error,False,request_error,TIMEOUT,timeout
+25,guest,rag_exact,rag_accuracy,Can I pay fees in installments?,OK,16.617,message,False,"missing_expected_any:['installment', 'payment']; rag_exact_returned_no_data","missing_expected_any:['installment', 'payment']|rag_exact_returned_no_data","I could not find reliable information in the current UCSI knowledge base. Please ask with specific keywords (programme name, block, intake, staff role), or request a data update."
+24,guest,rag_exact,rag_accuracy,Is accommodation guaranteed for first year students?,TIMEOUT,37.041,error,False,request_error,TIMEOUT,timeout
+23,guest,rag_exact,rag_accuracy,Is there a prayer room?,TIMEOUT,37.041,error,False,request_error,TIMEOUT,timeout
+rw_01_block_a_followup,guest,rag_exact,rag_real_world,can you tell me about block A?,TIMEOUT,37.031,error,False,request_error,TIMEOUT,timeout
+rw_02_print_documents,guest,rag_exact,rag_real_world,Where can I print documents?,TIMEOUT,35.009,error,False,request_error,TIMEOUT,timeout
+rw_06_library_gap,guest,rag_negative,rag_real_world,What time does the library close?,OK,11.129,message,True,ok,,"I could not find reliable information in the current UCSI knowledge base. Please ask with specific keywords (programme name, block, intake, staff role), or request a data update."
+rw_04_route_b_bus,guest,rag_exact,rag_real_world,Bus schedule for Route B,TIMEOUT,37.063,error,False,request_error,TIMEOUT,timeout
+rw_03_it_faculty_head,guest,rag_exact,rag_real_world,Who is the head of the IT faculty?,TIMEOUT,37.064,error,False,request_error,TIMEOUT,timeout
+rw_05_programme_scope,guest,rag_exact,rag_real_world,What programs does UCSI offer?,TIMEOUT,37.027,error,False,request_error,TIMEOUT,timeout
+rw_07_vc_gap,guest,rag_negative,rag_real_world,Who is the Vice Chancellor?,TIMEOUT,35.008,error,False,request_error,TIMEOUT,timeout
+rw_08_spiderman_guard,guest,rag_negative,rag_real_world,Who is Professor Spiderman?,TIMEOUT,37.027,error,False,request_error,TIMEOUT,timeout
+1,guest,factual,general_knowledge,Who is Albert Einstein?,TIMEOUT,37.027,error,False,request_error,TIMEOUT,timeout
+2,guest,factual,general_knowledge,Who painted the Mona Lisa?,TIMEOUT,37.027,error,False,request_error,TIMEOUT,timeout
+3,guest,factual,general_knowledge,What is the capital of France?,TIMEOUT,37.027,error,False,request_error,TIMEOUT,timeout
+4,guest,factual,general_knowledge,What is photosynthesis?,TIMEOUT,37.028,error,False,request_error,TIMEOUT,timeout
+5,guest,mathematical,general_knowledge,What is 2 + 2?,TIMEOUT,37.028,error,False,request_error,TIMEOUT,timeout
+6,guest,factual,general_knowledge,What is Python programming?,TIMEOUT,37.064,error,False,request_error,TIMEOUT,timeout
+7,guest,factual,general_knowledge,What is the speed of light?,OK,26.411,message,False,"missing_expected_any:['299', '300', 'km', 'm/s']","missing_expected_any:['299', '300', 'km', 'm/s']",I encountered an error processing your request.
+9,guest,factual,general_knowledge,What is the largest ocean?,OK,35.914,message,True,ok,,The largest ocean is the Pacific Ocean!
+8,guest,factual,general_knowledge,How many continents are there?,TIMEOUT,37.032,error,False,request_error,TIMEOUT,timeout
+11,guest,factual,general_knowledge,What is the formula for water?,OK,33.156,message,True,ok,,"The formula for water is H₂O, which means each molecule of water is made up of two hydrogen atoms and one oxygen atom."
+10,guest,factual,general_knowledge,Who wrote Romeo and Juliet?,TIMEOUT,37.036,error,False,request_error,TIMEOUT,timeout
+13,guest,factual,general_knowledge,What is machine learning?,OK,28.799,message,False,"missing_expected_any:['ai', 'artificial', 'algorithm', '인공지능', '알고리즘']","missing_expected_any:['ai', 'artificial', 'algorithm', '인공지능', '알고리즘']",I encountered an error processing your request.
+12,guest,factual,general_knowledge,What is the tallest mountain?,OK,31.999,message,False,"missing_expected_any:['everest', '에베레스트']","missing_expected_any:['everest', '에베레스트']",I encountered an error processing your request.
+14,guest,factual,general_knowledge,What is the capital of Italy?,TIMEOUT,35.009,error,False,request_error,TIMEOUT,timeout
+15,guest,factual,general_knowledge,What is a black hole?,TIMEOUT,37.053,error,False,request_error,TIMEOUT,timeout
+16,guest,factual,general_knowledge,What is the currency of Japan?,TIMEOUT,35.009,error,False,request_error,TIMEOUT,timeout
+17,guest,creative,general_knowledge,Translate 'Hello' to French,OK,33.839,message,True,ok,,"Hello in French is ""Bonjour""."
+18,guest,factual,general_knowledge,What is the meaning of life?,OK,21.536,message,True,ok,,"That's a big question! The meaning of life is something people have pondered for centuries. There isn't one single answer, as it's often a deeply personal and philosophical concept. Some find meaning in relationships, ot"
+19,guest,practical,general_knowledge,How do I cook pasta?,OK,26.964,message,False,markdown_format_leak; general_too_long:727,markdown_format_leak|general_too_long:727,"Okay, here's a basic guide to cooking pasta! 
+
+1. **Boil Water:** Bring a large pot of salted water to a rolling boil. Use plenty of water – about 6 quarts (5.7 liters) for a pound (450g) of pasta.
+2. **Add Pasta:** Add "
+20,guest,factual,general_knowledge,Who won the World Cup in 2022?,OK,31.412,message,True,ok,,Argentina won the World Cup in 2022!
+auth_01_guest_personal_gate,guest,auth_guard,strict_auth_intent,where am I from?,OK,18.29,login_hint,True,ok,,Please login to access personal information.
+auth_02_auth_nationality_only,auth,personal_scope,strict_auth_intent,where am I from?,OK,17.698,message,True,ok,,"Here is your profile information.
+
+Nationality: China"
+auth_03_auth_grade_requires_2fa,auth,auth_guard,strict_auth_intent,can you tell me about my GPA?,TIMEOUT,35.013,error,False,request_error,TIMEOUT,timeout
+auth_04_auth_profile_safe_summary,auth,personal_scope,strict_auth_intent,can you tell me about my information?,OK,12.602,message,False,"missing_require_all:['student_number:', 'student_name:', 'programme_name:']","missing_require_all:['student_number:', 'student_name:', 'programme_name:']","Here is your profile information.
+
+Student Number: 5004273609
+Student Name: Gomana Wern Rou
+Nationality: China
+Gender: Female
+Programme: Bachelor of Computer Science (Honours)
+Profile Status: Active
+Intake: 2024-05
+Date "
+auth_05_guest_general_no_auth_prompt,guest,general_guard,strict_auth_intent,What is Python programming?,OK,21.632,message,True,ok,,"Python is a high-level, general-purpose programming language. It's known for its readability, and it's used in a wide variety of applications like web development, data science, machine learning, and scripting. It has a "

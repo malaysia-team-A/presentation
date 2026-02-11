@@ -1,0 +1,129 @@
+{
+  "pre_deab1e4": {
+    "meta": {
+      "workdir": "C:\\Users\\leejb\\Desktop\\final_pre_deab_20260209_170806",
+      "cmd": [
+        "C:\\Users\\leejb\\Desktop\\final\\.venv\\Scripts\\python.exe",
+        "main.py"
+      ],
+      "server_log_tail": "[DB] Successfully connected to MongoDB: UCSI_DB\nDEBUG: Using collection 'UCSI' for student data.\nDataEngine initialized with MongoDB (connected: True)\n[ERROR] GOOGLE_API_KEY not found.\nStarting Flask server with Google GenAI Native Model: gemma-3-27b-it\n * Serving Flask app 'main'\n * Debug mode: on\n"
+    },
+    "cases": {
+      "person_ko_about_1": {
+        "turns": [
+          {
+            "message": "vicky yiran? ??? ???",
+            "status": "EXCEPTION",
+            "text": "nothing to repeat at position 0",
+            "no_data_like": false,
+            "session_id": "fa68a4b13a9a3c5d"
+          }
+        ],
+        "has_no_data_like": false,
+        "final_text": "nothing to repeat at position 0"
+      },
+      "person_ko_about_2": {
+        "turns": [
+          {
+            "message": "vicky yiran? ?? ???",
+            "status": "EXCEPTION",
+            "text": "nothing to repeat at position 0",
+            "no_data_like": false,
+            "session_id": "5ee6804799e65096"
+          }
+        ],
+        "has_no_data_like": false,
+        "final_text": "nothing to repeat at position 0"
+      },
+      "person_en": {
+        "turns": [
+          {
+            "message": "who is vicky yiran?",
+            "status": "EXCEPTION",
+            "text": "nothing to repeat at position 0",
+            "no_data_like": false,
+            "session_id": "8b6b7983bb5c5f24"
+          }
+        ],
+        "has_no_data_like": false,
+        "final_text": "nothing to repeat at position 0"
+      },
+      "followup_recommend": {
+        "turns": [
+          {
+            "message": "??? ????",
+            "status": "EXCEPTION",
+            "text": "nothing to repeat at position 0",
+            "no_data_like": false,
+            "session_id": "8a1a5d6147fd9790"
+          },
+          {
+            "message": "??? ????",
+            "status": "EXCEPTION",
+            "text": "nothing to repeat at position 0",
+            "no_data_like": false,
+            "session_id": "89d29ad89a052223"
+          }
+        ],
+        "has_no_data_like": false,
+        "final_text": "nothing to repeat at position 0"
+      },
+      "ucsi_hostel": {
+        "turns": [
+          {
+            "message": "UCSI hostel fee ???",
+            "status": "EXCEPTION",
+            "text": "nothing to repeat at position 0",
+            "no_data_like": false,
+            "session_id": "ccfbca1479398dbd"
+          }
+        ],
+        "has_no_data_like": false,
+        "final_text": "nothing to repeat at position 0"
+      },
+      "general_ml": {
+        "turns": [
+          {
+            "message": "????? ???",
+            "status": "EXCEPTION",
+            "text": "nothing to repeat at position 0",
+            "no_data_like": false,
+            "session_id": "655a86af3578cdc5"
+          }
+        ],
+        "has_no_data_like": false,
+        "final_text": "nothing to repeat at position 0"
+      }
+    }
+  },
+  "pre_8a53267": {
+    "meta": {
+      "workdir": "C:\\Users\\leejb\\Desktop\\final_pre_8a_20260209_170806",
+      "cmd": [
+        "C:\\Users\\leejb\\Desktop\\final\\.venv\\Scripts\\python.exe",
+        "main.py"
+      ],
+      "startup_error": true,
+      "server_log_tail": "[DB] Successfully connected to MongoDB: UCSI_DB\nDEBUG: Using collection 'UCSI' for student data.\n2026-02-09 17:12:51,006 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json \"HTTP/1.1 307 Temporary Redirect\"\nWarning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n2026-02-09 17:12:51,007 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n2026-02-09 17:12:51,297 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json \"HTTP/1.1 200 OK\"\n2026-02-09 17:12:51,327 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json \"HTTP/1.1 200 OK\"\n2026-02-09 17:12:51,605 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json \"HTTP/1.1 307 Temporary Redirect\"\n2026-02-09 17:12:51,654 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json \"HTTP/1.1 200 OK\"\n2026-02-09 17:12:51,688 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json \"HTTP/1.1 200 OK\"\n2026-02-09 17:12:52,127 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json \"HTTP/1.1 307 Temporary Redirect\"\n2026-02-09 17:12:52,202 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json \"HTTP/1.1 200 OK\"\n2026-02-09 17:12:52,649 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md \"HTTP/1.1 307 Temporary Redirect\"\n2026-02-09 17:12:52,659 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md \"HTTP/1.1 200 OK\"\n2026-02-09 17:12:52,718 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md \"HTTP/1.1 200 OK\"\n2026-02-09 17:12:53,140 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json \"HTTP/1.1 307 Temporary Redirect\"\n2026-02-09 17:12:53,148 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json \"HTTP/1.1 200 OK\"\n2026-02-09 17:12:53,472 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json \"HTTP/1.1 307 Temporary Redirect\"\n2026-02-09 17:12:53,481 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json \"HTTP/1.1 200 OK\"\n2026-02-09 17:12:53,676 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json \"HTTP/1.1 200 OK\"\n2026-02-09 17:12:54,015 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json \"HTTP/1.1 404 Not Found\"\n2026-02-09 17:12:54,301 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json \"HTTP/1.1 307 Temporary Redirect\"\nforrtl: error (200): program aborting due to control-BREAK event\nImage              PC                Routine            Line        Source             \nKERNELBASE.dll     00007FF80034D64D  Unknown               Unknown  Unknown\nKERNEL32.DLL       00007FF80237E8D7  Unknown               Unknown  Unknown\nntdll.dll          00007FF8036EC40C  Unknown               Unknown  Unknown\n"
+    },
+    "cases": {}
+  },
+  "current_worktree": {
+    "meta": {
+      "workdir": "C:\\Users\\leejb\\Desktop\\final",
+      "cmd": [
+        "C:\\Users\\leejb\\Desktop\\final\\.venv\\Scripts\\python.exe",
+        "-m",
+        "uvicorn",
+        "main:app",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "5000"
+      ],
+      "startup_error": true,
+      "server_log_tail": "199 [00:00<00:00, 4363.39it/s, Materializing param=embeddings.token_type_embeddings.weight]\nLoading weights:   2%|2         | 4/199 [00:00<00:00, 4145.59it/s, Materializing param=embeddings.token_type_embeddings.weight]\nLoading weights:   3%|2         | 5/199 [00:00<00:00, 4478.22it/s, Materializing param=embeddings.word_embeddings.weight]      \nLoading weights:   3%|2         | 5/199 [00:00<00:00, 4140.48it/s, Materializing param=embeddings.word_embeddings.weight]\nLoading weights:   3%|3         | 6/199 [00:00<00:00, 3159.15it/s, Materializing param=encoder.layer.0.attention.output.LayerNorm.bias]\nLoading weights:   3%|3         | 6/199 [00:00<00:00, 2980.32it/s, Materializing param=encoder.layer.0.attention.output.LayerNorm.bias]\nLoading weights:   4%|3         | 7/199 [00:00<00:00, 3155.98it/s, Materializing param=encoder.layer.0.attention.output.LayerNorm.weight]\nLoading weights:   4%|3         | 7/199 [00:00<00:00, 2583.84it/s, Materializing param=encoder.layer.0.attention.output.LayerNorm.weight]\nLoading weights:   4%|4         | 8/199 [00:00<00:00, 2590.08it/s, Materializing param=encoder.layer.0.attention.output.dense.bias]      \nLoading weights:   4%|4         | 8/199 [00:00<00:00, 2525.36it/s, Materializing param=encoder.layer.0.attention.output.dense.bias]\nLoading weights:   5%|4         | 9/199 [00:00<00:00, 2678.74it/s, Materializing param=encoder.layer.0.attention.output.dense.weight]\nLoading weights:   5%|4         | 9/199 [00:00<00:00, 2598.16it/s, Materializing param=encoder.layer.0.attention.output.dense.weight]\nLoading weights:   5%|5         | 10/199 [00:00<00:00, 2760.32it/s, Materializing param=encoder.layer.0.attention.self.key.bias]     \nLoading weights:   5%|5         | 10/199 [00:00<00:00, 2713.35it/s, Materializing param=encoder.layer.0.attention.self.key.bias]\nLoading weights:   6%|5         | 11/199 [00:00<00:00, 2890.99it/s, Materializing param=encoder.layer.0.attention.self.key.weight]\nLoading weights:   6%|5         | 11/199 [00:00<00:00, 2855.56it/s, Materializing param=encoder.layer.0.attention.self.key.weight]\nLoading weights:   6%|6         | 12/199 [00:00<00:00, 2685.36it/s, Materializing param=encoder.layer.0.attention.self.query.bias]\nLoading weights:   6%|6         | 12/199 [00:00<00:00, 2624.72it/s, Materializing param=encoder.layer.0.attention.self.query.bias]\nLoading weights:   7%|6         | 13/199 [00:00<00:00, 2753.98it/s, Materializing param=encoder.layer.0.attention.self.query.weight]\nLoading weights:   7%|6         | 13/199 [00:00<00:00, 2562.91it/s, Materializing param=encoder.layer.0.attention.self.query.weight]\nLoading weights:   7%|7         | 14/199 [00:00<00:00, 2512.42it/s, Materializing param=encoder.layer.0.attention.self.value.bias]  \nLoading weights:   7%|7         | 14/199 [00:00<00:00, 2463.20it/s, Materializing param=encoder.layer.0.attention.self.value.bias]\nLoading weights:   8%|7         | 15/199 [00:00<00:00, 2578.47it/s, Materializing param=encoder.layer.0.attention.self.value.weight]\nLoading weights:   8%|7         | 15/199 [00:00<00:00, 2547.56it/s, Materializing param=encoder.layer.0.attention.self.value.weight]\nLoading weights:   8%|8         | 16/199 [00:00<00:00, 2668.13it/s, Materializing param=encoder.layer.0.intermediate.dense.bias]    \nLoading weights:   8%|8         | 16/199 [00:00<00:00, 2646.25it/s, Materializing param=encoder.layer.0.intermediate.dense.bias]\nLoading weights:   9%|8         | 17/199 [01:22<14:44,  4.86s/it, Materializing param=encoder.layer.0.intermediate.dense.bias]  \nLoading weights:   9%|8         | 17/199 [01:22<14:44,  4.86s/it, Materializing param=encoder.layer.0.intermediate.dense.weight]\nLoading weights:   9%|8         | 17/199 [01:22<14:44,  4.86s/it, Materializing param=encoder.layer.0.intermediate.dense.weight]\nLoading weights:   9%|9         | 18/199 [01:22<14:39,  4.86s/it, Materializing param=encoder.layer.0.output.LayerNorm.bias]    \nLoading weights:   9%|9         | 18/199 [01:22<14:39,  4.86s/it, Materializing param=encoder.layer.0.output.LayerNorm.bias]\nLoading weights:  10%|9         | 19/199 [01:22<14:34,  4.86s/it, Materializing param=encoder.layer.0.output.LayerNorm.weight]\nLoading weights:  10%|9         | 19/199 [01:22<14:34,  4.86s/it, Materializing param=encoder.layer.0.output.LayerNorm.weight]\nLoading weights:  10%|#         | 20/199 [01:22<14:29,  4.86s/it, Materializing param=encoder.layer.0.output.dense.bias]      \nLoading weights:  10%|#         | 20/199 [01:22<14:29,  4.86s/it, Materializing param=encoder.layer.0.output.dense.bias]\nLoading weights:  11%|#         | 21/199 [01:22<14:24,  4.86s/it, Materializing param=encoder.layer.0.output.dense.weight]\nLoading weights:  11%|#         | 21/199 [01:22<14:24,  4.86s/it, Materializing param=encoder.layer.0.output.dense.weight]\nLoading weights:  11%|#1        | 22/199 [01:22<14:20,  4.86s/it, Materializing param=encoder.layer.1.attention.output.LayerNorm.bias]\nLoading weights:  11%|#1        | 22/199 [01:22<14:20,  4.86s/it, Materializing param=encoder.layer.1.attention.output.LayerNorm.bias]\nLoading weights:  12%|#1        | 23/199 [01:22<14:15,  4.86s/it, Materializing param=encoder.layer.1.attention.output.LayerNorm.weight]\nLoading weights:  12%|#1        | 23/199 [01:22<14:15,  4.86s/it, Materializing param=encoder.layer.1.attention.output.LayerNorm.weight]\nLoading weights:  12%|#2        | 24/199 [01:22<14:10,  4.86s/it, Materializing param=encoder.layer.1.attention.output.dense.bias]      \nLoading weights:  12%|#2        | 24/199 [01:22<14:10,  4.86s/it, Materializing param=encoder.layer.1.attention.output.dense.bias]\nLoading weights:  13%|#2        | 25/199 [01:22<14:05,  4.86s/it, Materializing param=encoder.layer.1.attention.output.dense.weight]\nLoading weights:  13%|#2        | 25/199 [01:22<14:05,  4.86s/it, Materializing param=encoder.layer.1.attention.output.dense.weight]\nLoading weights:  13%|#3        | 26/199 [01:22<14:00,  4.86s/it, Materializing param=encoder.layer.1.attention.self.key.bias]      "
+    },
+    "cases": {}
+  }
+}

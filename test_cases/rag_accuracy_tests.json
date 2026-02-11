@@ -1,0 +1,371 @@
+[
+    {
+        "id": 1,
+        "type": "rag_exact",
+        "category": "facilities",
+        "query": "Where is Block A?",
+        "query_ko": "Block A는 어디에 있나요?",
+        "expected_keywords": [
+            "Block A"
+        ],
+        "must_not_contain": [
+            "cannot find",
+            "찾을 수 없",
+            "don't know"
+        ],
+        "description": "RAG should find Block A location from facilities collection"
+    },
+    {
+        "id": 2,
+        "type": "rag_exact",
+        "category": "hostel",
+        "query": "How much is the hostel fee?",
+        "query_ko": "기숙사 비용이 얼마인가요?",
+        "expected_keywords": [
+            "RM",
+            "hostel",
+            "fee"
+        ],
+        "must_not_contain": [
+            "cannot find"
+        ],
+        "description": "RAG should find hostel pricing information"
+    },
+    {
+        "id": 3,
+        "type": "rag_exact",
+        "category": "tuition",
+        "query": "What is the tuition fee for Computer Science?",
+        "query_ko": "컴퓨터 사이언스 학비가 얼마인가요?",
+        "expected_keywords": [
+            "RM",
+            "tuition",
+            "Computer Science"
+        ],
+        "must_not_contain": [
+            "cannot find"
+        ],
+        "description": "RAG should find CS tuition fees"
+    },
+    {
+        "id": 4,
+        "type": "rag_exact",
+        "category": "facilities",
+        "query": "What time does the library close?",
+        "query_ko": "도서관은 몇 시에 닫나요?",
+        "allow_no_data": true,
+        "expected_keywords": [
+            "library"
+        ],
+        "must_not_contain": [],
+        "description": "RAG should return library hours if present, otherwise explicit DB no-data"
+    },
+    {
+        "id": 5,
+        "type": "rag_exact",
+        "category": "transport",
+        "query": "Do you have a shuttle bus service?",
+        "query_ko": "셔틀버스 서비스가 있나요?",
+        "expected_keywords": [
+            "bus",
+            "shuttle"
+        ],
+        "must_not_contain": [],
+        "description": "RAG should find shuttle bus information"
+    },
+    {
+        "id": 6,
+        "type": "rag_negative",
+        "category": "hallucination_test",
+        "query": "What is the fee for the Mars Campus?",
+        "query_ko": "화성 캠퍼스 비용이 얼마인가요?",
+        "expected_keywords": [
+            "cannot",
+            "not",
+            "don't",
+            "없",
+            "찾을 수 없"
+        ],
+        "must_not_contain": [
+            "RM",
+            "price",
+            "cost"
+        ],
+        "description": "RAG should NOT hallucinate about non-existent Mars Campus"
+    },
+    {
+        "id": 7,
+        "type": "rag_negative",
+        "category": "hallucination_test",
+        "query": "Who is Professor Spiderman?",
+        "query_ko": "스파이더맨 교수님이 누구인가요?",
+        "expected_keywords": [
+            "cannot",
+            "not",
+            "don't",
+            "없",
+            "찾을 수 없"
+        ],
+        "must_not_contain": [
+            "teaches",
+            "department",
+            "office"
+        ],
+        "description": "RAG should NOT hallucinate about non-existent professor"
+    },
+    {
+        "id": 8,
+        "type": "rag_negative",
+        "category": "hallucination_test",
+        "query": "What is the tuition for Jedi training?",
+        "query_ko": "제다이 훈련 학비가 얼마인가요?",
+        "expected_keywords": [
+            "cannot",
+            "not",
+            "don't",
+            "없",
+            "찾을 수 없"
+        ],
+        "must_not_contain": [
+            "RM",
+            "fee",
+            "program"
+        ],
+        "description": "RAG should NOT hallucinate about fictional programs"
+    },
+    {
+        "id": 9,
+        "type": "rag_exact",
+        "category": "programmes",
+        "query": "List all engineering majors",
+        "query_ko": "공학 전공 목록을 알려주세요",
+        "expected_keywords": [
+            "engineering"
+        ],
+        "must_not_contain": [
+            "cannot find"
+        ],
+        "description": "RAG should find engineering programmes"
+    },
+    {
+        "id": 10,
+        "type": "rag_exact",
+        "category": "facilities",
+        "query": "Is there a gym on campus?",
+        "query_ko": "캠퍼스에 체육관이 있나요?",
+        "expected_keywords": [
+            "gym",
+            "fitness"
+        ],
+        "must_not_contain": [],
+        "description": "RAG should find gym facilities info"
+    },
+    {
+        "id": 11,
+        "type": "rag_exact",
+        "category": "scholarships",
+        "query": "How do I apply for a scholarship?",
+        "query_ko": "장학금은 어떻게 신청하나요?",
+        "expected_keywords": [
+            "scholarship"
+        ],
+        "must_not_contain": [],
+        "description": "RAG should find scholarship application info"
+    },
+    {
+        "id": 12,
+        "type": "rag_exact",
+        "category": "intake",
+        "query": "When is the next intake for 2026?",
+        "query_ko": "2026년 다음 입학 시기는 언제인가요?",
+        "expected_keywords": [
+            "intake",
+            "2026"
+        ],
+        "must_not_contain": [],
+        "description": "RAG should find intake dates"
+    },
+    {
+        "id": 13,
+        "type": "rag_exact",
+        "category": "staff",
+        "query": "Who is the Vice Chancellor?",
+        "query_ko": "부총장이 누구인가요?",
+        "allow_no_data": true,
+        "expected_keywords": [
+            "Vice Chancellor"
+        ],
+        "must_not_contain": [],
+        "description": "RAG should return VC information if present, otherwise explicit DB no-data"
+    },
+    {
+        "id": 14,
+        "type": "rag_exact",
+        "category": "facilities",
+        "query": "Is there a cafeteria on campus?",
+        "query_ko": "캠퍼스에 카페테리아가 있나요?",
+        "expected_keywords": [
+            "cafeteria",
+            "food",
+            "dining"
+        ],
+        "must_not_contain": [],
+        "description": "RAG should find cafeteria info"
+    },
+    {
+        "id": 15,
+        "type": "rag_exact",
+        "category": "contact",
+        "query": "What is the address of the campus?",
+        "query_ko": "캠퍼스 주소가 어디인가요?",
+        "expected_keywords": [
+            "address",
+            "location"
+        ],
+        "must_not_contain": [],
+        "description": "RAG should find campus address"
+    },
+    {
+        "id": 16,
+        "type": "rag_exact",
+        "category": "courses",
+        "query": "Do you offer PhD programs?",
+        "query_ko": "박사 과정이 있나요?",
+        "expected_keywords": [
+            "PhD",
+            "doctoral"
+        ],
+        "must_not_contain": [],
+        "description": "RAG should find PhD program info"
+    },
+    {
+        "id": 17,
+        "type": "rag_exact",
+        "category": "international",
+        "query": "Do you accept international students?",
+        "query_ko": "국제 학생을 받나요?",
+        "expected_keywords": [
+            "international"
+        ],
+        "must_not_contain": [],
+        "description": "RAG should find international student info"
+    },
+    {
+        "id": 18,
+        "type": "rag_exact",
+        "category": "facilities",
+        "query": "Is there a swimming pool?",
+        "query_ko": "수영장이 있나요?",
+        "expected_keywords": [
+            "pool",
+            "swimming"
+        ],
+        "must_not_contain": [],
+        "description": "RAG should find swimming pool info"
+    },
+    {
+        "id": 19,
+        "type": "rag_exact",
+        "category": "facilities",
+        "query": "Where can I print documents?",
+        "query_ko": "문서를 어디서 출력할 수 있나요?",
+        "expected_keywords": [
+            "print"
+        ],
+        "must_not_contain": [],
+        "description": "RAG should find printing facilities"
+    },
+    {
+        "id": 20,
+        "type": "rag_exact",
+        "category": "programmes",
+        "query": "What are the entry requirements for Diploma in IT?",
+        "query_ko": "IT 디플로마 입학 요건이 무엇인가요?",
+        "expected_keywords": [
+            "diploma",
+            "IT",
+            "requirement"
+        ],
+        "must_not_contain": [],
+        "description": "RAG should find diploma entry requirements"
+    },
+    {
+        "id": 21,
+        "type": "rag_negative",
+        "category": "hallucination_test",
+        "query": "Where is the UFO landing pad?",
+        "query_ko": "UFO 착륙장이 어디인가요?",
+        "expected_keywords": [
+            "cannot",
+            "not",
+            "don't",
+            "없",
+            "찾을 수 없"
+        ],
+        "must_not_contain": [
+            "located",
+            "building",
+            "block"
+        ],
+        "description": "RAG should NOT hallucinate about fictional facilities"
+    },
+    {
+        "id": 22,
+        "type": "rag_negative",
+        "category": "hallucination_test",
+        "query": "Tell me about the Moon campus tuition",
+        "query_ko": "달 캠퍼스 학비를 알려주세요",
+        "expected_keywords": [
+            "cannot",
+            "not",
+            "don't",
+            "없",
+            "찾을 수 없"
+        ],
+        "must_not_contain": [
+            "RM",
+            "fee",
+            "tuition"
+        ],
+        "description": "RAG should NOT hallucinate about Moon campus"
+    },
+    {
+        "id": 23,
+        "type": "rag_exact",
+        "category": "facilities",
+        "query": "Is there a prayer room?",
+        "query_ko": "기도실이 있나요?",
+        "expected_keywords": [
+            "prayer",
+            "room"
+        ],
+        "must_not_contain": [],
+        "description": "RAG should find prayer room info"
+    },
+    {
+        "id": 24,
+        "type": "rag_exact",
+        "category": "hostel",
+        "query": "Is accommodation guaranteed for first year students?",
+        "query_ko": "1학년 학생에게 기숙사가 보장되나요?",
+        "expected_keywords": [
+            "accommodation",
+            "hostel"
+        ],
+        "must_not_contain": [],
+        "description": "RAG should find accommodation guarantee policy"
+    },
+    {
+        "id": 25,
+        "type": "rag_exact",
+        "category": "policies",
+        "query": "Can I pay fees in installments?",
+        "query_ko": "학비를 분할 납부할 수 있나요?",
+        "expected_keywords": [
+            "installment",
+            "payment"
+        ],
+        "must_not_contain": [],
+        "description": "RAG should find payment policy"
+    }
+]

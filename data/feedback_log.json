@@ -1,0 +1,143 @@
+{
+  "feedbacks": [
+    {
+      "id": 1,
+      "timestamp": "2026-02-05T16:10:11.428581",
+      "session_id": "jwt_session",
+      "user_message": "say my DOB and grade",
+      "ai_response": "🔒 Security Check: Please enter your password to view examination results.",
+      "rating": "negative",
+      "comment": null
+    },
+    {
+      "id": 2,
+      "timestamp": "2026-02-06T10:30:38.129217",
+      "session_id": "jwt_session",
+      "user_message": "What programs does UCSI offer?",
+      "ai_response": "I apologize, but I encountered an error generating a response.",
+      "rating": "negative",
+      "comment": null
+    },
+    {
+      "id": 3,
+      "timestamp": "2026-02-06T10:30:38.658536",
+      "session_id": "jwt_session",
+      "user_message": "hello",
+      "ai_response": "I apologize, but I encountered an error generating a response.",
+      "rating": "negative",
+      "comment": null
+    },
+    {
+      "id": 4,
+      "timestamp": "2026-02-06T11:50:42.134397",
+      "session_id": "jwt_session",
+      "user_message": "hello",
+      "ai_response": "Hello there!",
+      "rating": "negative",
+      "comment": null
+    },
+    {
+      "id": 5,
+      "timestamp": "2026-02-06T15:08:41.031660",
+      "session_id": "jwt_session",
+      "user_message": "상담 예약",
+      "ai_response": "상담 예약을 도와드릴 수 있습니다. 어떤 날짜와 시간을 선호하시나요? 현재 학점은 0.54이며, 학기가 지정되지 않아 이번 학기 기준으로 제공됩니다.",
+      "rating": "positive",
+      "comment": null
+    },
+    {
+      "id": 6,
+      "timestamp": "2026-02-06T17:40:29.284240",
+      "session_id": "jwt_session",
+      "user_message": "can you tell me about block A?",
+      "ai_response": "I cannot find that information in the database. The provided documents mention Blocks D & E for on-campus accommodation, but not Block A.",
+      "rating": "negative",
+      "comment": null
+    },
+    {
+      "id": 7,
+      "timestamp": "2026-02-08T22:52:20.008956",
+      "session_id": "jwt_session",
+      "user_message": "Where is Block A?",
+      "ai_response": "Block A is in Kuala Lumpur.",
+      "rating": "positive",
+      "comment": "helpful"
+    },
+    {
+      "id": 8,
+      "timestamp": "2026-02-08T22:52:22.208288",
+      "session_id": "jwt_session",
+      "user_message": "Bus schedule for Route Z",
+      "ai_response": "The database has no information for shuttle bus route schedule details.",
+      "rating": "negative",
+      "comment": "too generic"
+    },
+    {
+      "id": 9,
+      "timestamp": "2026-02-08T22:52:24.416410",
+      "session_id": "jwt_session",
+      "user_message": "test q",
+      "ai_response": "test a",
+      "rating": "meh",
+      "comment": "x"
+    },
+    {
+      "id": 10,
+      "timestamp": "2026-02-08T22:53:58.371191",
+      "session_id": "jwt_session",
+      "user_message": "NEG_TEST_001",
+      "ai_response": "bad answer",
+      "rating": "negative",
+      "comment": "test"
+    },
+    {
+      "id": 11,
+      "timestamp": "2026-02-08T22:54:25.350667",
+      "session_id": "s",
+      "user_message": "NEG_DIRECT",
+      "ai_response": "bad",
+      "rating": "negative",
+      "comment": "x"
+    },
+    {
+      "id": 12,
+      "timestamp": "2026-02-08T22:57:37.552522",
+      "session_id": "guest_session",
+      "user_message": "Where is Block A?",
+      "ai_response": "Block A is in Kuala Lumpur.",
+      "rating": "positive",
+      "comment": "helpful"
+    },
+    {
+      "id": 13,
+      "timestamp": "2026-02-08T22:57:39.739627",
+      "session_id": "guest_session",
+      "user_message": "NEG_TEST_002",
+      "ai_response": "bad answer",
+      "rating": "negative",
+      "comment": "wrong"
+    },
+    {
+      "id": 14,
+      "timestamp": "2026-02-08T23:00:20.185783",
+      "session_id": "guest_session",
+      "user_message": "NEG_TEST_003",
+      "ai_response": "bad",
+      "rating": "negative",
+      "comment": "wrong"
+    },
+    {
+      "id": 15,
+      "timestamp": "2026-02-08T23:05:38.482049",
+      "session_id": "f9f5f86fb3b1878e",
+      "user_message": "니 이름이 왜 카이냐고",
+      "ai_response": "안녕하세요! 저는 카이입니다. 대학교 조교를 하고 있어요.",
+      "rating": "negative",
+      "comment": null
+    }
+  ],
+  "stats": {
+    "positive": 3,
+    "negative": 11
+  }
+}

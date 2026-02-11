@@ -1,0 +1,75 @@
+[
+  {
+    "id": "rw_01_block_a_followup",
+    "type": "rag_exact",
+    "category": "campus_blocks",
+    "query": "can you tell me about block A?",
+    "expected_keywords": ["block a"],
+    "must_not_contain": ["temporarily busy", "cannot find"],
+    "description": "Real user phrasing for block lookup."
+  },
+  {
+    "id": "rw_02_print_documents",
+    "type": "rag_exact",
+    "category": "facility_printing",
+    "query": "Where can I print documents?",
+    "expected_keywords": ["print"],
+    "must_not_contain": ["temporarily busy"],
+    "description": "Printing query should stay actionable and domain-grounded."
+  },
+  {
+    "id": "rw_03_it_faculty_head",
+    "type": "rag_exact",
+    "category": "staff_leadership",
+    "query": "Who is the head of the IT faculty?",
+    "expected_keywords": ["head", "director", "faculty"],
+    "must_not_contain": ["temporarily busy", "cannot find"],
+    "description": "Faculty leadership role query."
+  },
+  {
+    "id": "rw_04_route_b_bus",
+    "type": "rag_exact",
+    "category": "transport_schedule",
+    "query": "Bus schedule for Route B",
+    "allow_no_data": true,
+    "expected_keywords": ["bus", "schedule"],
+    "must_not_contain": ["temporarily busy"],
+    "description": "Route-specific bus schedule query; allow explicit DB no-data when route data is absent."
+  },
+  {
+    "id": "rw_05_programme_scope",
+    "type": "rag_exact",
+    "category": "programmes",
+    "query": "What programs does UCSI offer?",
+    "expected_keywords": ["program", "programme", "ucsi"],
+    "must_not_contain": ["temporarily busy"],
+    "description": "Broad programme inquiry from low-confidence log."
+  },
+  {
+    "id": "rw_06_library_gap",
+    "type": "rag_negative",
+    "category": "known_dataset_gap",
+    "query": "What time does the library close?",
+    "expected_keywords": ["library"],
+    "must_not_contain": ["temporarily busy"],
+    "description": "Known gap should produce explicit no-data style response."
+  },
+  {
+    "id": "rw_07_vc_gap",
+    "type": "rag_negative",
+    "category": "known_dataset_gap",
+    "query": "Who is the Vice Chancellor?",
+    "expected_keywords": ["vice chancellor"],
+    "must_not_contain": ["temporarily busy"],
+    "description": "Known staff-role gap should not hallucinate."
+  },
+  {
+    "id": "rw_08_spiderman_guard",
+    "type": "rag_negative",
+    "category": "hallucination_guard",
+    "query": "Who is Professor Spiderman?",
+    "expected_keywords": ["cannot", "not", "unavailable"],
+    "must_not_contain": ["department", "office", "temporarily busy"],
+    "description": "Fictional staff member should be refused."
+  }
+]

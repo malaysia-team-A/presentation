@@ -1,0 +1,17 @@
+﻿id,query,status_code,ok,expected_hit,has_no_data_phrase,response_preview,type
+1,Where is Block A?,200,True,True,False,"Block A is located at Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia. You can find a map here: https://drive.google.com/file/d/1MJXJLyZgtZLcnH-d-6Tlt9aOA8Ll4G7L/view?usp=sharing",grounded
+2,How much is the hostel fee?,200,True,True,False,"I'm sorry, the provided information does not mention anything about hostel fees. I can help you with details about programmes, fees for those programmes, and entry requirements, though! 
+
+Would you like me to search for information about a ",grounded
+3,What time does the library close?,200,False,False,False,"I'm sorry, I don't have information about the library's closing time in the provided data. I can only provide details on KK Super Mart at South Campus, which is open 24 hours.",no_data
+4,event schedule for intake,200,True,True,False,"Here's the event schedule I found:
+
+*   **Add/Drop Course(s) Period (No Penalty):** 05-01-2026 to 16-01-2026 (General) or 05-01-2026 to 20-01-2026 (Foundation)
+*   **Release of Results (Jan-Apr Sem):** 14-05-2026
+*   **Wesak Day:** 04-05-20",grounded
+5,Who is Professor Spiderman?,200,True,True,True,I could not find verified information about this in the UCSI knowledge base. Please contact the relevant department for accurate details.,no_data
+6,What is the fee for the Mars Campus?,200,True,True,True,I could not find verified information about this in the UCSI knowledge base. Please contact the relevant department for accurate details.,no_data
+7,Tell me about the Moon campus tuition,200,True,True,True,I could not find verified information about this in the UCSI knowledge base. Please contact the relevant department for accurate details.,no_data
+8,Is accommodation guaranteed for first year students?,200,True,True,False,"I'm sorry, I don't have information on whether accommodation is guaranteed for first-year students. My current knowledge base only contains details about available hostels, their prices, and features. 
+
+If you'd like to know more about spec",grounded

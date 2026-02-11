@@ -1,0 +1,710 @@
+{
+  "collections": {
+    "UCSI_DB.BadQA": {
+      "ns": "UCSI_DB.BadQA",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "bad_answer",
+          "count",
+          "query",
+          "reason",
+          "timestamp"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "bad_answer": {
+            "bsonType": "string"
+          },
+          "count": {
+            "bsonType": "int"
+          },
+          "query": {
+            "bsonType": "string"
+          },
+          "reason": {
+            "bsonType": "string"
+          },
+          "timestamp": {
+            "bsonType": "date"
+          }
+        }
+      }
+    },
+    "UCSI_DB.Feedback": {
+      "ns": "UCSI_DB.Feedback",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "ai_response",
+          "comment",
+          "query_norm",
+          "rating",
+          "timestamp",
+          "user_message"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "ai_response": {
+            "bsonType": "string"
+          },
+          "comment": {
+            "bsonType": [
+              "string",
+              "null"
+            ]
+          },
+          "id": {
+            "bsonType": "int"
+          },
+          "legacy_id": {
+            "bsonType": "int"
+          },
+          "memory_source": {
+            "bsonType": "string"
+          },
+          "migrated_at": {
+            "bsonType": "string"
+          },
+          "migrated_from": {
+            "bsonType": "string"
+          },
+          "policy_tags": {
+            "bsonType": "array",
+            "items": {
+              "bsonType": "string"
+            }
+          },
+          "query_norm": {
+            "bsonType": "string"
+          },
+          "query_tokens": {
+            "bsonType": "array",
+            "items": {
+              "bsonType": "string"
+            }
+          },
+          "rating": {
+            "bsonType": "string"
+          },
+          "reward": {
+            "bsonType": "double"
+          },
+          "session_id": {
+            "bsonType": "string"
+          },
+          "timestamp": {
+            "bsonType": [
+              "string",
+              "date"
+            ]
+          },
+          "user_message": {
+            "bsonType": "string"
+          }
+        }
+      }
+    },
+    "UCSI_DB.Hostel": {
+      "ns": "UCSI_DB.Hostel",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "ac",
+          "building",
+          "campus",
+          "category",
+          "deposit",
+          "features",
+          "rent_price",
+          "room_type"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "ac": {
+            "bsonType": "bool"
+          },
+          "building": {
+            "bsonType": "string"
+          },
+          "campus": {
+            "bsonType": "string"
+          },
+          "category": {
+            "bsonType": "string"
+          },
+          "deposit": {
+            "bsonType": "int"
+          },
+          "features": {
+            "bsonType": "string"
+          },
+          "rent_price": {
+            "bsonType": "int"
+          },
+          "room_type": {
+            "bsonType": "string"
+          }
+        }
+      }
+    },
+    "UCSI_DB.LearnedQA": {
+      "ns": "UCSI_DB.LearnedQA",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "answer",
+          "query",
+          "source",
+          "timestamp"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "answer": {
+            "bsonType": "string"
+          },
+          "query": {
+            "bsonType": "string"
+          },
+          "query_norm": {
+            "bsonType": "string"
+          },
+          "query_tokens": {
+            "bsonType": "array",
+            "items": {
+              "bsonType": "string"
+            }
+          },
+          "source": {
+            "bsonType": "string"
+          },
+          "timestamp": {
+            "bsonType": "date"
+          }
+        }
+      }
+    },
+    "UCSI_DB.UCSI": {
+      "ns": "UCSI_DB.UCSI",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "DEPARTMENT",
+          "DOB",
+          "GENDER",
+          "GPA",
+          "INTAKE",
+          "NATIONALITY",
+          "Password",
+          "PROFILE_STATUS",
+          "PROFILE_TYPE",
+          "PROGRAMME_CODE",
+          "PROGRAMME_NAME",
+          "STUDENT_NAME",
+          "STUDENT_NUMBER"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "DEPARTMENT": {
+            "bsonType": "string"
+          },
+          "DOB": {
+            "bsonType": "string"
+          },
+          "GENDER": {
+            "bsonType": "string"
+          },
+          "GPA": {
+            "bsonType": "double"
+          },
+          "INTAKE": {
+            "bsonType": "string"
+          },
+          "NATIONALITY": {
+            "bsonType": "string"
+          },
+          "Password": {
+            "bsonType": "string"
+          },
+          "PROFILE_STATUS": {
+            "bsonType": "string"
+          },
+          "PROFILE_TYPE": {
+            "bsonType": "string"
+          },
+          "PROGRAMME_CODE": {
+            "bsonType": "string"
+          },
+          "PROGRAMME_NAME": {
+            "bsonType": "string"
+          },
+          "STUDENT_NAME": {
+            "bsonType": "string"
+          },
+          "STUDENT_NUMBER": {
+            "bsonType": "long"
+          }
+        }
+      }
+    },
+    "UCSI_DB.UCSI_ MAJOR": {
+      "ns": "UCSI_DB.UCSI_ MAJOR",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "Accreditation Code",
+          "Approval Code",
+          "Course Duration",
+          "Course Location",
+          "Course Mode",
+          "Fields of Study",
+          "IELTS",
+          "Intakes",
+          "International Students Fees",
+          "Local Students Fees",
+          "MUET",
+          "Programme",
+          "Url"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "Accreditation Code": {
+            "bsonType": "string"
+          },
+          "Approval Code": {
+            "bsonType": "string"
+          },
+          "Course Duration": {
+            "bsonType": "string"
+          },
+          "Course Location": {
+            "bsonType": "string"
+          },
+          "Course Mode": {
+            "bsonType": "string"
+          },
+          "Fields of Study": {
+            "bsonType": "string"
+          },
+          "IELTS": {
+            "bsonType": [
+              "string",
+              "int"
+            ]
+          },
+          "Intakes": {
+            "bsonType": "string"
+          },
+          "International Students Fees": {
+            "bsonType": "string"
+          },
+          "Local Students Fees": {
+            "bsonType": "string"
+          },
+          "MUET": {
+            "bsonType": [
+              "string",
+              "int"
+            ]
+          },
+          "Programme": {
+            "bsonType": "string"
+          },
+          "Programme Overview": {
+            "bsonType": "string"
+          },
+          "Url": {
+            "bsonType": "string"
+          }
+        }
+      }
+    },
+    "UCSI_DB.UCSI_FACILITY": {
+      "ns": "UCSI_DB.UCSI_FACILITY",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "category",
+          "location",
+          "name",
+          "opening_hours",
+          "price_info",
+          "tags"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "category": {
+            "bsonType": "string"
+          },
+          "location": {
+            "bsonType": "string"
+          },
+          "name": {
+            "bsonType": "string"
+          },
+          "opening_hours": {
+            "bsonType": "string"
+          },
+          "price_info": {
+            "bsonType": "string"
+          },
+          "tags": {
+            "bsonType": "string"
+          }
+        }
+      }
+    },
+    "UCSI_DB.UCSI_HOSTEL_FAQ": {
+      "ns": "UCSI_DB.UCSI_HOSTEL_FAQ",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "answer",
+          "category",
+          "question",
+          "tags"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "answer": {
+            "bsonType": "string"
+          },
+          "category": {
+            "bsonType": "string"
+          },
+          "question": {
+            "bsonType": "string"
+          },
+          "tags": {
+            "bsonType": "string"
+          }
+        }
+      }
+    },
+    "UCSI_DB.UCSI_STAFF": {
+      "ns": "UCSI_DB.UCSI_STAFF",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "major",
+          "staff_members"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "major": {
+            "bsonType": "string"
+          },
+          "staff_members": {
+            "bsonType": "array",
+            "items": {
+              "bsonType": "object",
+              "properties": {
+                "email": {
+                  "bsonType": "string"
+                },
+                "name": {
+                  "bsonType": "string"
+                },
+                "profile_url": {
+                  "bsonType": "string"
+                },
+                "role": {
+                  "bsonType": "string"
+                }
+              },
+              "required": [
+                "email",
+                "name",
+                "profile_url",
+                "role"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "UCSI_DB.UCSI_University_Blocks_Data": {
+      "ns": "UCSI_DB.UCSI_University_Blocks_Data",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "campus"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "campus": {
+            "bsonType": "object",
+            "properties": {
+              "UCSI University Kuala Lumpur Campus": {
+                "bsonType": "object",
+                "properties": {
+                  "blocks": {
+                    "bsonType": "array",
+                    "items": {
+                      "bsonType": "object",
+                      "properties": {
+                        "_id": {
+                          "bsonType": "objectId"
+                        },
+                        "Address": {
+                          "bsonType": "string"
+                        },
+                        "BUILDING_IMAGE": {
+                          "bsonType": "string"
+                        },
+                        "Latitude": {
+                          "bsonType": "double"
+                        },
+                        "Longitude": {
+                          "bsonType": "double"
+                        },
+                        "MAP": {
+                          "bsonType": "string"
+                        },
+                        "Name": {
+                          "bsonType": "string"
+                        }
+                      },
+                      "required": [
+                        "_id",
+                        "Address",
+                        "BUILDING_IMAGE",
+                        "Latitude",
+                        "Longitude",
+                        "MAP",
+                        "Name"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "blocks"
+                ]
+              },
+              "UCSI University Kuching Campus": {
+                "bsonType": "object",
+                "properties": {
+                  "_id": {
+                    "bsonType": "objectId"
+                  },
+                  "Address": {
+                    "bsonType": "string"
+                  },
+                  "BUILDING_IMAGE": {
+                    "bsonType": "string"
+                  },
+                  "Latitude": {
+                    "bsonType": "double"
+                  },
+                  "Longitude": {
+                    "bsonType": "double"
+                  },
+                  "MAP": {
+                    "bsonType": "string"
+                  },
+                  "Name": {
+                    "bsonType": "string"
+                  }
+                },
+                "required": [
+                  "_id",
+                  "Address",
+                  "BUILDING_IMAGE",
+                  "Latitude",
+                  "Longitude",
+                  "MAP",
+                  "Name"
+                ]
+              },
+              "UCSI University Springhill Campus": {
+                "bsonType": "object",
+                "properties": {
+                  "_id": {
+                    "bsonType": "objectId"
+                  },
+                  "Address": {
+                    "bsonType": "string"
+                  },
+                  "BUILDING_IMAGE": {
+                    "bsonType": "string"
+                  },
+                  "Latitude": {
+                    "bsonType": "double"
+                  },
+                  "Longitude": {
+                    "bsonType": "double"
+                  },
+                  "MAP": {
+                    "bsonType": "string"
+                  },
+                  "Name": {
+                    "bsonType": "string"
+                  }
+                },
+                "required": [
+                  "_id",
+                  "Address",
+                  "BUILDING_IMAGE",
+                  "Latitude",
+                  "Longitude",
+                  "MAP",
+                  "Name"
+                ]
+              }
+            },
+            "required": [
+              "UCSI University Kuala Lumpur Campus",
+              "UCSI University Kuching Campus",
+              "UCSI University Springhill Campus"
+            ]
+          }
+        }
+      }
+    },
+    "UCSI_DB.USCI_SCHEDUAL": {
+      "ns": "UCSI_DB.USCI_SCHEDUAL",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "campus_scope": {
+            "bsonType": "string"
+          },
+          "end_date": {
+            "bsonType": "string"
+          },
+          "event_name": {
+            "bsonType": "string"
+          },
+          "event_type": {
+            "bsonType": "string"
+          },
+          "programme": {
+            "bsonType": "string"
+          },
+          "start_date": {
+            "bsonType": "string"
+          }
+        }
+      }
+    },
+    "UCSI_DB.semantic_intents": {
+      "ns": "UCSI_DB.semantic_intents",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "created_at",
+          "embedding",
+          "example",
+          "intent",
+          "source"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "created_at": {
+            "bsonType": "string"
+          },
+          "embedding": {
+            "bsonType": "array",
+            "items": {
+              "bsonType": "double"
+            }
+          },
+          "example": {
+            "bsonType": "string"
+          },
+          "intent": {
+            "bsonType": "string"
+          },
+          "source": {
+            "bsonType": "string"
+          }
+        }
+      }
+    },
+    "UCSI_DB.unanswered": {
+      "ns": "UCSI_DB.unanswered",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "confidence",
+          "conversation_id",
+          "question",
+          "reason",
+          "search_query",
+          "sources",
+          "timestamp"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "confidence": {
+            "bsonType": [
+              "double",
+              "int"
+            ]
+          },
+          "conversation_id": {
+            "bsonType": "string"
+          },
+          "question": {
+            "bsonType": "string"
+          },
+          "reason": {
+            "bsonType": "string"
+          },
+          "search_query": {
+            "bsonType": "string"
+          },
+          "sources": {
+            "bsonType": "array"
+          },
+          "timestamp": {
+            "bsonType": "string"
+          }
+        }
+      }
+    }
+  },
+  "relationships": []
+}

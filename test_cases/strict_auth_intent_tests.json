@@ -1,0 +1,48 @@
+[
+  {
+    "id": "auth_01_guest_personal_gate",
+    "scope": "guest",
+    "type": "auth_guard",
+    "query": "where am I from?",
+    "expect_type": "login_hint",
+    "require_any": ["login"],
+    "forbid_any": ["address", "block", "campus", "nationality:"]
+  },
+  {
+    "id": "auth_02_auth_nationality_only",
+    "scope": "auth",
+    "type": "personal_scope",
+    "query": "where am I from?",
+    "expect_type": "message",
+    "require_any": ["nationality:"],
+    "forbid_any": ["address", "block", "campus", "programme", "gpa", "cgpa"],
+    "max_chars": 80
+  },
+  {
+    "id": "auth_03_auth_grade_requires_2fa",
+    "scope": "auth",
+    "type": "auth_guard",
+    "query": "can you tell me about my GPA?",
+    "expect_type": "password_prompt",
+    "require_any": ["security check", "password"],
+    "forbid_any": ["gpa:", "cgpa:", "grade:", "result:"]
+  },
+  {
+    "id": "auth_04_auth_profile_safe_summary",
+    "scope": "auth",
+    "type": "personal_scope",
+    "query": "can you tell me about my information?",
+    "expect_type": "message",
+    "require_all": ["student_number:", "student_name:", "programme_name:"],
+    "forbid_any": ["gpa:", "cgpa:", "latest_results", "grades"]
+  },
+  {
+    "id": "auth_05_guest_general_no_auth_prompt",
+    "scope": "guest",
+    "type": "general_guard",
+    "query": "What is Python programming?",
+    "expect_type": "message",
+    "require_any": ["programming", "language"],
+    "forbid_any": ["login", "security check", "password prompt"]
+  }
+]

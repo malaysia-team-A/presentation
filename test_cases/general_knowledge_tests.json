@@ -1,0 +1,258 @@
+[
+    {
+        "id": 1,
+        "type": "factual",
+        "category": "science",
+        "query": "Who is Albert Einstein?",
+        "query_ko": "알버트 아인슈타인은 누구인가요?",
+        "expected_keywords": [
+            "physicist",
+            "relativity",
+            "science",
+            "물리학자"
+        ],
+        "description": "General knowledge about famous scientist"
+    },
+    {
+        "id": 2,
+        "type": "factual",
+        "category": "art",
+        "query": "Who painted the Mona Lisa?",
+        "query_ko": "모나리자는 누가 그렸나요?",
+        "expected_keywords": [
+            "Leonardo",
+            "da Vinci",
+            "레오나르도"
+        ],
+        "description": "General knowledge about famous artwork"
+    },
+    {
+        "id": 3,
+        "type": "factual",
+        "category": "geography",
+        "query": "What is the capital of France?",
+        "query_ko": "프랑스의 수도는 어디인가요?",
+        "expected_keywords": [
+            "Paris",
+            "파리"
+        ],
+        "description": "Basic geography question"
+    },
+    {
+        "id": 4,
+        "type": "factual",
+        "category": "science",
+        "query": "What is photosynthesis?",
+        "query_ko": "광합성이란 무엇인가요?",
+        "expected_keywords": [
+            "plant",
+            "sunlight",
+            "energy",
+            "식물",
+            "빛"
+        ],
+        "description": "Basic science concept"
+    },
+    {
+        "id": 5,
+        "type": "mathematical",
+        "category": "math",
+        "query": "What is 2 + 2?",
+        "query_ko": "2 + 2는 얼마인가요?",
+        "expected_keywords": [
+            "4"
+        ],
+        "description": "Simple arithmetic"
+    },
+    {
+        "id": 6,
+        "type": "factual",
+        "category": "technology",
+        "query": "What is Python programming?",
+        "query_ko": "파이썬 프로그래밍이란 무엇인가요?",
+        "expected_keywords": [
+            "programming",
+            "language",
+            "프로그래밍",
+            "언어"
+        ],
+        "description": "Technology definition"
+    },
+    {
+        "id": 7,
+        "type": "factual",
+        "category": "science",
+        "query": "What is the speed of light?",
+        "query_ko": "빛의 속도는 얼마인가요?",
+        "expected_keywords": [
+            "299",
+            "300",
+            "km",
+            "m/s"
+        ],
+        "description": "Physics constant"
+    },
+    {
+        "id": 8,
+        "type": "factual",
+        "category": "geography",
+        "query": "How many continents are there?",
+        "query_ko": "대륙은 몇 개인가요?",
+        "expected_keywords": [
+            "7",
+            "seven",
+            "일곱"
+        ],
+        "description": "Basic geography"
+    },
+    {
+        "id": 9,
+        "type": "factual",
+        "category": "geography",
+        "query": "What is the largest ocean?",
+        "query_ko": "가장 큰 바다는 무엇인가요?",
+        "expected_keywords": [
+            "Pacific",
+            "태평양"
+        ],
+        "description": "Geography fact"
+    },
+    {
+        "id": 10,
+        "type": "factual",
+        "category": "literature",
+        "query": "Who wrote Romeo and Juliet?",
+        "query_ko": "로미오와 줄리엣을 누가 썼나요?",
+        "expected_keywords": [
+            "Shakespeare",
+            "셰익스피어"
+        ],
+        "description": "Literature knowledge"
+    },
+    {
+        "id": 11,
+        "type": "factual",
+        "category": "science",
+        "query": "What is the formula for water?",
+        "query_ko": "물의 화학식은 무엇인가요?",
+        "expected_keywords": [
+            "H2O",
+            "H₂O"
+        ],
+        "description": "Chemistry basic"
+    },
+    {
+        "id": 12,
+        "type": "factual",
+        "category": "geography",
+        "query": "What is the tallest mountain?",
+        "query_ko": "가장 높은 산은 무엇인가요?",
+        "expected_keywords": [
+            "Everest",
+            "에베레스트"
+        ],
+        "description": "Geography fact"
+    },
+    {
+        "id": 13,
+        "type": "factual",
+        "category": "technology",
+        "query": "What is machine learning?",
+        "query_ko": "머신러닝이란 무엇인가요?",
+        "expected_keywords": [
+            "AI",
+            "artificial",
+            "algorithm",
+            "인공지능",
+            "알고리즘"
+        ],
+        "description": "Technology concept"
+    },
+    {
+        "id": 14,
+        "type": "factual",
+        "category": "geography",
+        "query": "What is the capital of Italy?",
+        "query_ko": "이탈리아의 수도는 어디인가요?",
+        "expected_keywords": [
+            "Rome",
+            "로마"
+        ],
+        "description": "Geography fact"
+    },
+    {
+        "id": 15,
+        "type": "factual",
+        "category": "science",
+        "query": "What is a black hole?",
+        "query_ko": "블랙홀이란 무엇인가요?",
+        "expected_keywords": [
+            "gravity",
+            "space",
+            "중력",
+            "우주"
+        ],
+        "description": "Astronomy concept"
+    },
+    {
+        "id": 16,
+        "type": "factual",
+        "category": "geography",
+        "query": "What is the currency of Japan?",
+        "query_ko": "일본의 화폐는 무엇인가요?",
+        "expected_keywords": [
+            "Yen",
+            "엔"
+        ],
+        "description": "Geography/Economics fact"
+    },
+    {
+        "id": 17,
+        "type": "creative",
+        "category": "language",
+        "query": "Translate 'Hello' to French",
+        "query_ko": "'안녕하세요'를 프랑스어로 번역해주세요",
+        "expected_keywords": [
+            "Bonjour",
+            "봉주르"
+        ],
+        "description": "Translation task"
+    },
+    {
+        "id": 18,
+        "type": "factual",
+        "category": "philosophy",
+        "query": "What is the meaning of life?",
+        "query_ko": "삶의 의미는 무엇인가요?",
+        "expected_keywords": [],
+        "allow_philosophical": true,
+        "description": "Open-ended philosophical question"
+    },
+    {
+        "id": 19,
+        "type": "practical",
+        "category": "cooking",
+        "query": "How do I cook pasta?",
+        "query_ko": "파스타는 어떻게 요리하나요?",
+        "expected_keywords": [
+            "boil",
+            "water",
+            "salt",
+            "끓",
+            "물"
+        ],
+        "description": "Practical cooking instruction"
+    },
+    {
+        "id": 20,
+        "type": "factual",
+        "category": "sports",
+        "query": "Who won the World Cup in 2022?",
+        "query_ko": "2022년 월드컵 우승 국가는?",
+        "expected_keywords": [
+            "Argentina",
+            "아르헨티나"
+        ],
+        "description": "Recent sports fact"
+    }
+]

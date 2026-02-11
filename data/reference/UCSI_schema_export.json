@@ -1,0 +1,524 @@
+{
+  "collections": {
+    "UCSI_DB.BadQA": {
+      "ns": "UCSI_DB.BadQA",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "bad_answer",
+          "count",
+          "query",
+          "reason",
+          "timestamp"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "bad_answer": {
+            "bsonType": "string"
+          },
+          "count": {
+            "bsonType": "int"
+          },
+          "query": {
+            "bsonType": "string"
+          },
+          "reason": {
+            "bsonType": "string"
+          },
+          "timestamp": {
+            "bsonType": "date"
+          }
+        }
+      }
+    },
+    "UCSI_DB.Feedback": {
+      "ns": "UCSI_DB.Feedback",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "ai_response",
+          "comment",
+          "id",
+          "rating",
+          "session_id",
+          "timestamp",
+          "user_message"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "ai_response": {
+            "bsonType": "string"
+          },
+          "comment": {
+            "bsonType": [
+              "string",
+              "null"
+            ]
+          },
+          "id": {
+            "bsonType": "int"
+          },
+          "rating": {
+            "bsonType": "string"
+          },
+          "session_id": {
+            "bsonType": "string"
+          },
+          "timestamp": {
+            "bsonType": "string"
+          },
+          "user_message": {
+            "bsonType": "string"
+          }
+        }
+      }
+    },
+    "UCSI_DB.Hostel": {
+      "ns": "UCSI_DB.Hostel",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "ac",
+          "building",
+          "campus",
+          "category",
+          "deposit",
+          "features",
+          "rent_price",
+          "room_type"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "ac": {
+            "bsonType": "bool"
+          },
+          "building": {
+            "bsonType": "string"
+          },
+          "campus": {
+            "bsonType": "string"
+          },
+          "category": {
+            "bsonType": "string"
+          },
+          "deposit": {
+            "bsonType": "int"
+          },
+          "features": {
+            "bsonType": "string"
+          },
+          "rent_price": {
+            "bsonType": "int"
+          },
+          "room_type": {
+            "bsonType": "string"
+          }
+        }
+      }
+    },
+    "UCSI_DB.LearnedQA": {
+      "ns": "UCSI_DB.LearnedQA",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "answer",
+          "query",
+          "source",
+          "timestamp"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "answer": {
+            "bsonType": "string"
+          },
+          "query": {
+            "bsonType": "string"
+          },
+          "source": {
+            "bsonType": "string"
+          },
+          "timestamp": {
+            "bsonType": "date"
+          }
+        }
+      }
+    },
+    "UCSI_DB.UCSI": {
+      "ns": "UCSI_DB.UCSI",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "DEPARTMENT",
+          "DOB",
+          "GENDER",
+          "GPA",
+          "INTAKE",
+          "NATIONALITY",
+          "Password",
+          "PROFILE_STATUS",
+          "PROFILE_TYPE",
+          "PROGRAMME_CODE",
+          "PROGRAMME_NAME",
+          "STUDENT_NAME",
+          "STUDENT_NUMBER"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "DEPARTMENT": {
+            "bsonType": "string"
+          },
+          "DOB": {
+            "bsonType": "string"
+          },
+          "GENDER": {
+            "bsonType": "string"
+          },
+          "GPA": {
+            "bsonType": "double"
+          },
+          "INTAKE": {
+            "bsonType": "string"
+          },
+          "NATIONALITY": {
+            "bsonType": "string"
+          },
+          "Password": {
+            "bsonType": "string"
+          },
+          "PROFILE_STATUS": {
+            "bsonType": "string"
+          },
+          "PROFILE_TYPE": {
+            "bsonType": "string"
+          },
+          "PROGRAMME_CODE": {
+            "bsonType": "string"
+          },
+          "PROGRAMME_NAME": {
+            "bsonType": "string"
+          },
+          "STUDENT_NAME": {
+            "bsonType": "string"
+          },
+          "STUDENT_NUMBER": {
+            "bsonType": "long"
+          }
+        }
+      }
+    },
+    "UCSI_DB.UCSI_ MAJOR": {
+      "ns": "UCSI_DB.UCSI_ MAJOR",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "Accreditation Code",
+          "Approval Code",
+          "Course Duration",
+          "Course Location",
+          "Course Mode",
+          "Fields of Study",
+          "IELTS",
+          "Intakes",
+          "International Students Fees",
+          "Local Students Fees",
+          "MUET",
+          "Programme",
+          "Url"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "Accreditation Code": {
+            "bsonType": "string"
+          },
+          "Approval Code": {
+            "bsonType": "string"
+          },
+          "Course Duration": {
+            "bsonType": "string"
+          },
+          "Course Location": {
+            "bsonType": "string"
+          },
+          "Course Mode": {
+            "bsonType": "string"
+          },
+          "Fields of Study": {
+            "bsonType": "string"
+          },
+          "IELTS": {
+            "bsonType": [
+              "string",
+              "int"
+            ]
+          },
+          "Intakes": {
+            "bsonType": "string"
+          },
+          "International Students Fees": {
+            "bsonType": "string"
+          },
+          "Local Students Fees": {
+            "bsonType": "string"
+          },
+          "MUET": {
+            "bsonType": [
+              "string",
+              "int"
+            ]
+          },
+          "Programme": {
+            "bsonType": "string"
+          },
+          "Programme Overview": {
+            "bsonType": "string"
+          },
+          "Url": {
+            "bsonType": "string"
+          }
+        }
+      }
+    },
+    "UCSI_DB.UCSI_FACILITY": {
+      "ns": "UCSI_DB.UCSI_FACILITY",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "category",
+          "location",
+          "name",
+          "opening_hours",
+          "price_info",
+          "tags"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "category": {
+            "bsonType": "string"
+          },
+          "location": {
+            "bsonType": "string"
+          },
+          "name": {
+            "bsonType": "string"
+          },
+          "opening_hours": {
+            "bsonType": "string"
+          },
+          "price_info": {
+            "bsonType": "string"
+          },
+          "tags": {
+            "bsonType": "string"
+          }
+        }
+      }
+    },
+    "UCSI_DB.UCSI_HOSTEL_FAQ": {
+      "ns": "UCSI_DB.UCSI_HOSTEL_FAQ",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "answer",
+          "category",
+          "question",
+          "tags"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "answer": {
+            "bsonType": "string"
+          },
+          "category": {
+            "bsonType": "string"
+          },
+          "question": {
+            "bsonType": "string"
+          },
+          "tags": {
+            "bsonType": "string"
+          }
+        }
+      }
+    },
+    "UCSI_DB.UCSI_STAFF": {
+      "ns": "UCSI_DB.UCSI_STAFF",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "major",
+          "staff_members"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "major": {
+            "bsonType": "string"
+          },
+          "staff_members": {
+            "bsonType": "array",
+            "items": {
+              "bsonType": "object",
+              "properties": {
+                "email": {
+                  "bsonType": "string"
+                },
+                "name": {
+                  "bsonType": "string"
+                },
+                "profile_url": {
+                  "bsonType": "string"
+                },
+                "role": {
+                  "bsonType": "string"
+                }
+              },
+              "required": [
+                "email",
+                "name",
+                "profile_url",
+                "role"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "UCSI_DB.UCSI_University_Blocks_Data": {
+      "ns": "UCSI_DB.UCSI_University_Blocks_Data",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id",
+          "Address",
+          "Latitude",
+          "Longitude",
+          "Name"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "Address": {
+            "bsonType": "string"
+          },
+          "BLOCK A_BUILDING": {
+            "bsonType": "string"
+          },
+          "BLOCK A_MAP": {
+            "bsonType": "string"
+          },
+          "BLOCK B_BUIILDING": {
+            "bsonType": "string"
+          },
+          "BLOCK B_MAP": {
+            "bsonType": "string"
+          },
+          "BLOCK C_BUILDING": {
+            "bsonType": "string"
+          },
+          "BLOCK C_MAP": {
+            "bsonType": "string"
+          },
+          "BLOCK D_BUILDING": {
+            "bsonType": "string"
+          },
+          "BLOCK D_MAP": {
+            "bsonType": "string"
+          },
+          "BLOCK E_BUILDING": {
+            "bsonType": "string"
+          },
+          "BLOCK E_MAP": {
+            "bsonType": "string"
+          },
+          "BLOCKG_BUILDING": {
+            "bsonType": "string"
+          },
+          "BLOCKG_MAP": {
+            "bsonType": "string"
+          },
+          "KUCHING_BUILDING": {
+            "bsonType": "string"
+          },
+          "KUCHING_MAP": {
+            "bsonType": "string"
+          },
+          "Latitude": {
+            "bsonType": "double"
+          },
+          "Longitude": {
+            "bsonType": "double"
+          },
+          "Name": {
+            "bsonType": "string"
+          },
+          "SPRINGHILL_BUILDING": {
+            "bsonType": "string"
+          },
+          "SPRINGHILL_MAP": {
+            "bsonType": "string"
+          }
+        }
+      }
+    },
+    "UCSI_DB.USCI_SCHEDUAL": {
+      "ns": "UCSI_DB.USCI_SCHEDUAL",
+      "jsonSchema": {
+        "bsonType": "object",
+        "required": [
+          "_id"
+        ],
+        "properties": {
+          "_id": {
+            "bsonType": "objectId"
+          },
+          "campus_scope": {
+            "bsonType": "string"
+          },
+          "end_date": {
+            "bsonType": "string"
+          },
+          "event_name": {
+            "bsonType": "string"
+          },
+          "event_type": {
+            "bsonType": "string"
+          },
+          "programme": {
+            "bsonType": "string"
+          },
+          "start_date": {
+            "bsonType": "string"
+          }
+        }
+      }
+    }
+  },
+  "relationships": []
+}

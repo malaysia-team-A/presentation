@@ -1,0 +1,301 @@
+id,type,query,status,latency,semantic_pass,semantic_score,semantic_failures,response_snippet
+0,RAG,Where is Block A located?,200,11.7492,True,1.0,,"Block A is located at Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia."
+1,RAG,Tell me about the library facilities.,200,3.1455,True,1.0,,The database has no information for library details.
+2,RAG,What are the hostel fees for single room?,200,11.8588,True,1.0,,"Accommodation/hostel details: The rent price for a Single Room is RM 1350 and the deposit is RM 2000 in Block E, Kuala Lumpur. Another Single Room option near UCSI Hospital costs R"
+3,RAG,Who is the head of the IT faculty?,200,10.7259,True,1.0,,"Professor Ts Dr Shayla Islam: role: Director ; Head of Research, major: Institute of Computer Science and Digital Innovation, email: shayla@ucsiuniversity.edu.my, profile_url: http"
+4,General,What is Python?,200,2.0855,True,1.0,,"I can answer general questions, but the AI service is busy right now. Please try again shortly."
+5,General,How do I cook pasta?,200,11.6059,True,1.0,,Here's a basic way to cook pasta: Bring a large pot of salted water to a boil. Add your pasta and cook according to package directions. Drain the pasta and serve with your favorite
+6,Personal,Check my grades,200,2.0472,True,1.0,,Please login to access personal information.
+7,Personal,What is my GPA?,200,2.1135,True,1.0,,Please login to access personal information.
+8,Personal,My student ID?,200,2.0769,True,1.0,,Please login to access personal information.
+9,RAG,Is there a gym strictly for students?,200,9.1542,True,1.0,,"Yes, the Gym & Pool is for students only. It is located at Block E / R2 and is free of charge. The opening hours are 07:00 - 22:00."
+10,RAG,Bus schedule for Route B,200,3.442,True,1.0,,The database has no information for shuttle bus route schedule details.
+11,Mixed,Tell me about Block A and my grades,200,2.0493,True,1.0,,Please login to access personal information.
+12,Edge,qwer asdf zxcv,200,17.1209,True,1.0,,"I'm not quite sure what you mean by 'qwer asdf zxcv'. Perhaps you were testing the system? If you have a question for me, please ask in complete sentences."
+13,Korean,기숙사 비용 얼마야?,200,19.4386,True,1.0,,해당 정보를 데이터베이스에서 찾을 수 없습니다.
+14,Korean,도서관 위치 알려줘,200,18.0909,True,1.0,,요청하신 정보가 DB에 없습니다.
+15,Korean,내 성적 확인해줘,200,2.0422,True,1.0,,Please login to access personal information.
+16,Hallucination_Trap,What is the fee for the non-existent Mars campus?,200,2.2171,True,1.0,,The database has no information for this request.
+17,Hallucination_Trap,Who is Professor Gandalf?,200,2.1311,True,1.0,,The database has no information for this request.
+18,RAG,Where is Block A located?,200,13.305,True,1.0,,"Block A is located at Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia."
+19,RAG,Tell me about the library facilities.,200,3.2201,True,1.0,,The database has no information for library details.
+20,RAG,What are the hostel fees for single room?,200,6.582,True,1.0,,"Accommodation/hostel details: The rent price for a Single Room is RM 1350 and the deposit is RM 2000 in Block E, Kuala Lumpur. Another Single Room option is available in Springhill"
+21,RAG,Who is the head of the IT faculty?,200,6.1089,True,1.0,,"Professor Ts Dr Shayla Islam: role: Director ; Head of Research, major: Institute of Computer Science and Digital Innovation, email: shayla@ucsiuniversity.edu.my, profile_url: http"
+22,General,What is Python?,200,2.0866,True,1.0,,"I can answer general questions, but the AI service is busy right now. Please try again shortly."
+23,General,How do I cook pasta?,200,2.0753,True,1.0,,Here's a basic way to cook pasta: Bring a large pot of salted water to a boil. Add your pasta and cook according to package directions. Drain the pasta and serve with your favorite
+24,Personal,Check my grades,200,2.0502,True,1.0,,Please login to access personal information.
+25,Personal,What is my GPA?,200,2.057,True,1.0,,Please login to access personal information.
+26,Personal,My student ID?,200,2.0453,True,1.0,,Please login to access personal information.
+27,RAG,Is there a gym strictly for students?,200,2.1741,True,1.0,,"Yes, the Gym & Pool is for students only. It is located at Block E / R2 and is free of charge. The opening hours are 07:00 - 22:00."
+28,RAG,Bus schedule for Route B,200,2.846,True,1.0,,The database has no information for shuttle bus route schedule details.
+29,Mixed,Tell me about Block A and my grades,200,2.0369,True,1.0,,Please login to access personal information.
+30,Edge,qwer asdf zxcv,200,2.6949,True,1.0,,"I'm not quite sure what you mean by 'qwer asdf zxcv'. Perhaps you were testing the system? If you have a question for me, please ask in complete sentences."
+31,Korean,기숙사 비용 얼마야?,200,2.6081,True,1.0,,해당 정보를 데이터베이스에서 찾을 수 없습니다.
+32,Korean,도서관 위치 알려줘,200,8.7821,True,1.0,,요청하신 정보가 DB에 없습니다.
+33,Korean,내 성적 확인해줘,200,2.0368,True,1.0,,Please login to access personal information.
+34,Hallucination_Trap,What is the fee for the non-existent Mars campus?,200,2.3692,True,1.0,,The database has no information for this request.
+35,Hallucination_Trap,Who is Professor Gandalf?,200,2.1397,True,1.0,,The database has no information for this request.
+36,RAG,Where is Block A located?,200,11.2374,True,1.0,,"Block A is located at Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia."
+37,RAG,Tell me about the library facilities.,200,3.221,True,1.0,,The database has no information for library details.
+38,RAG,What are the hostel fees for single room?,200,8.113,True,1.0,,"Accommodation/hostel details: The rent price for a Single Room is RM 1350 and the deposit is RM 2000 in Block E, Kuala Lumpur. Another Single Room option near UCSI Hospital costs R"
+39,RAG,Who is the head of the IT faculty?,200,8.5006,True,1.0,,"Professor Ts Dr Shayla Islam: role: Director ; Head of Research, major: Institute of Computer Science and Digital Innovation, email: shayla@ucsiuniversity.edu.my, profile_url: http"
+40,General,What is Python?,200,2.4995,True,1.0,,"I can answer general questions, but the AI service is busy right now. Please try again shortly."
+41,General,How do I cook pasta?,200,2.0814,True,1.0,,Here's a basic way to cook pasta: Bring a large pot of salted water to a boil. Add your pasta and cook according to package directions. Drain the pasta and serve with your favorite
+42,Personal,Check my grades,200,2.0434,True,1.0,,Please login to access personal information.
+43,Personal,What is my GPA?,200,2.0535,True,1.0,,Please login to access personal information.
+44,Personal,My student ID?,200,2.1616,True,1.0,,Please login to access personal information.
+45,RAG,Is there a gym strictly for students?,200,2.0685,True,1.0,,"Yes, the Gym & Pool is for students only. It is located at Block E / R2 and is free of charge. The opening hours are 07:00 - 22:00."
+46,RAG,Bus schedule for Route B,200,3.1697,True,1.0,,The database has no information for shuttle bus route schedule details.
+47,Mixed,Tell me about Block A and my grades,200,2.1922,True,1.0,,Please login to access personal information.
+48,Edge,qwer asdf zxcv,200,2.0779,True,1.0,,"I'm not quite sure what you mean by 'qwer asdf zxcv'. Perhaps you were testing the system? If you have a question for me, please ask in complete sentences."
+49,Korean,기숙사 비용 얼마야?,200,2.0985,True,1.0,,해당 정보를 데이터베이스에서 찾을 수 없습니다.
+50,Korean,도서관 위치 알려줘,200,9.7148,True,1.0,,요청하신 정보가 DB에 없습니다.
+51,Korean,내 성적 확인해줘,200,2.0616,True,1.0,,Please login to access personal information.
+52,Hallucination_Trap,What is the fee for the non-existent Mars campus?,200,2.0616,True,1.0,,The database has no information for this request.
+53,Hallucination_Trap,Who is Professor Gandalf?,200,2.2632,True,1.0,,The database has no information for this request.
+54,RAG,Where is Block A located?,200,4.0124,True,1.0,,"Block A: Name: Block A, Address: Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia, Latitude: 3.077331, Longitude: 101.737711, BLOCK A_B"
+55,RAG,Tell me about the library facilities.,200,3.4339,True,1.0,,The database has no information for library details.
+56,RAG,What are the hostel fees for single room?,200,3.5974,True,1.0,,"Accommodation/hostel details: | room_type: Twin Sharing | building: Block D | campus: Kuala Lumpur | category: On-Campus | rent_price: 650 | deposit: 1000 | features: Fan, Common B"
+57,RAG,Who is the head of the IT faculty?,200,3.1437,True,1.0,,"Professor Ts Dr Shayla Islam: role: Director ; Head of Research, major: Institute of Computer Science and Digital Innovation, email: shayla@ucsiuniversity.edu.my, profile_url: http"
+58,General,What is Python?,200,2.0698,True,1.0,,"I can answer general questions, but the AI service is busy right now. Please try again shortly."
+59,General,How do I cook pasta?,200,2.0892,True,1.0,,Here's a basic way to cook pasta: Bring a large pot of salted water to a boil. Add your pasta and cook according to package directions. Drain the pasta and serve with your favorite
+60,Personal,Check my grades,200,2.1695,True,1.0,,Please login to access personal information.
+61,Personal,What is my GPA?,200,2.0938,True,1.0,,Please login to access personal information.
+62,Personal,My student ID?,200,2.0445,True,1.0,,Please login to access personal information.
+63,RAG,Is there a gym strictly for students?,200,2.3715,True,1.0,,"Yes, the Gym & Pool is for students only. It is located at Block E / R2 and is free of charge. The opening hours are 07:00 - 22:00."
+64,RAG,Bus schedule for Route B,200,2.7894,True,1.0,,The database has no information for shuttle bus route schedule details.
+65,Mixed,Tell me about Block A and my grades,200,2.038,True,1.0,,Please login to access personal information.
+66,Edge,qwer asdf zxcv,200,2.0722,True,1.0,,"I'm not quite sure what you mean by 'qwer asdf zxcv'. Perhaps you were testing the system? If you have a question for me, please ask in complete sentences."
+67,Korean,기숙사 비용 얼마야?,200,2.4129,True,1.0,,해당 정보를 데이터베이스에서 찾을 수 없습니다.
+68,Korean,도서관 위치 알려줘,200,8.7601,True,1.0,,요청하신 정보가 DB에 없습니다.
+69,Korean,내 성적 확인해줘,200,2.0475,True,1.0,,Please login to access personal information.
+70,Hallucination_Trap,What is the fee for the non-existent Mars campus?,200,2.4608,True,1.0,,The database has no information for this request.
+71,Hallucination_Trap,Who is Professor Gandalf?,200,2.1858,True,1.0,,The database has no information for this request.
+72,RAG,Where is Block A located?,200,10.4383,True,1.0,,"Block A is located at Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia."
+73,RAG,Tell me about the library facilities.,200,3.149,True,1.0,,The database has no information for library details.
+74,RAG,What are the hostel fees for single room?,200,6.2755,True,1.0,,"Accommodation/hostel details: The rent price for a Single Room is RM 1350 and the deposit is RM 2000 in Block E, Kuala Lumpur. Another Single Room option near UCSI Hospital costs R"
+75,RAG,Who is the head of the IT faculty?,200,7.9128,True,1.0,,"Professor Ts Dr Shayla Islam: role: Director ; Head of Research, major: Institute of Computer Science and Digital Innovation, email: shayla@ucsiuniversity.edu.my, profile_url: http"
+76,General,What is Python?,200,2.4161,True,1.0,,"I can answer general questions, but the AI service is busy right now. Please try again shortly."
+77,General,How do I cook pasta?,200,2.0706,True,1.0,,Here's a basic way to cook pasta: Bring a large pot of salted water to a boil. Add your pasta and cook according to package directions. Drain the pasta and serve with your favorite
+78,Personal,Check my grades,200,2.1851,True,1.0,,Please login to access personal information.
+79,Personal,What is my GPA?,200,2.0694,True,1.0,,Please login to access personal information.
+80,Personal,My student ID?,200,2.0581,True,1.0,,Please login to access personal information.
+81,RAG,Is there a gym strictly for students?,200,2.0954,True,1.0,,"Yes, the Gym & Pool is for students only. It is located at Block E / R2 and is free of charge. The opening hours are 07:00 - 22:00."
+82,RAG,Bus schedule for Route B,200,2.7958,True,1.0,,The database has no information for shuttle bus route schedule details.
+83,Mixed,Tell me about Block A and my grades,200,2.0637,True,1.0,,Please login to access personal information.
+84,Edge,qwer asdf zxcv,200,2.3698,True,1.0,,"I'm not quite sure what you mean by 'qwer asdf zxcv'. Perhaps you were testing the system? If you have a question for me, please ask in complete sentences."
+85,Korean,기숙사 비용 얼마야?,200,2.3091,True,1.0,,해당 정보를 데이터베이스에서 찾을 수 없습니다.
+86,Korean,도서관 위치 알려줘,200,7.9623,True,1.0,,요청하신 정보가 DB에 없습니다.
+87,Korean,내 성적 확인해줘,200,2.2946,True,1.0,,Please login to access personal information.
+88,Hallucination_Trap,What is the fee for the non-existent Mars campus?,200,2.0932,True,1.0,,The database has no information for this request.
+89,Hallucination_Trap,Who is Professor Gandalf?,200,2.1438,True,1.0,,The database has no information for this request.
+90,RAG,Where is Block A located?,200,8.6591,True,1.0,,"Block A is located at Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia."
+91,RAG,Tell me about the library facilities.,200,2.7282,True,1.0,,The database has no information for library details.
+92,RAG,What are the hostel fees for single room?,200,9.5875,True,1.0,,"Accommodation/hostel details: The rent price for a single room is RM 1350 and the deposit is RM 2000 in Block E, Kuala Lumpur. Another single room option is available in Springhill"
+93,RAG,Who is the head of the IT faculty?,200,10.8406,True,1.0,,"Professor Ts Dr Shayla Islam: role: Director ; Head of Research, major: Institute of Computer Science and Digital Innovation, email: shayla@ucsiuniversity.edu.my, profile_url: http"
+94,General,What is Python?,200,2.2404,True,1.0,,"I can answer general questions, but the AI service is busy right now. Please try again shortly."
+95,General,How do I cook pasta?,200,2.0876,True,1.0,,Here's a basic way to cook pasta: Bring a large pot of salted water to a boil. Add your pasta and cook according to package directions. Drain the pasta and serve with your favorite
+96,Personal,Check my grades,200,2.0647,True,1.0,,Please login to access personal information.
+97,Personal,What is my GPA?,200,2.0295,True,1.0,,Please login to access personal information.
+98,Personal,My student ID?,200,2.441,True,1.0,,Please login to access personal information.
+99,RAG,Is there a gym strictly for students?,200,2.5135,True,1.0,,"Yes, the Gym & Pool is for students only. It is located at Block E / R2 and is free of charge. The opening hours are 07:00 - 22:00."
+100,RAG,Bus schedule for Route B,200,2.921,True,1.0,,The database has no information for shuttle bus route schedule details.
+101,Mixed,Tell me about Block A and my grades,200,2.0653,True,1.0,,Please login to access personal information.
+102,Edge,qwer asdf zxcv,200,2.0661,True,1.0,,"I'm not quite sure what you mean by 'qwer asdf zxcv'. Perhaps you were testing the system? If you have a question for me, please ask in complete sentences."
+103,Korean,기숙사 비용 얼마야?,200,2.0596,True,1.0,,해당 정보를 데이터베이스에서 찾을 수 없습니다.
+104,Korean,도서관 위치 알려줘,200,11.2042,True,1.0,,요청하신 정보가 DB에 없습니다.
+105,Korean,내 성적 확인해줘,200,2.0523,True,1.0,,Please login to access personal information.
+106,Hallucination_Trap,What is the fee for the non-existent Mars campus?,200,2.4365,True,1.0,,The database has no information for this request.
+107,Hallucination_Trap,Who is Professor Gandalf?,200,2.5048,True,1.0,,The database has no information for this request.
+108,RAG,Where is Block A located?,200,9.34,True,1.0,,"Block A is located at Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia."
+109,RAG,Tell me about the library facilities.,200,2.9307,True,1.0,,The database has no information for library details.
+110,RAG,What are the hostel fees for single room?,200,7.1285,True,1.0,,"Accommodation/hostel details: The rent price for a single room is RM 1350 and the deposit is RM 2000 in Block E, Kuala Lumpur. Another single room option is available in Springhill"
+111,RAG,Who is the head of the IT faculty?,200,6.2274,True,1.0,,"Professor Ts Dr Shayla Islam: role: Director ; Head of Research, major: Institute of Computer Science and Digital Innovation, email: shayla@ucsiuniversity.edu.my, profile_url: http"
+112,General,What is Python?,200,2.5862,True,1.0,,"I can answer general questions, but the AI service is busy right now. Please try again shortly."
+113,General,How do I cook pasta?,200,2.0819,True,1.0,,Here's a basic way to cook pasta: Bring a large pot of salted water to a boil. Add your pasta and cook according to package directions. Drain the pasta and serve with your favorite
+114,Personal,Check my grades,200,2.057,True,1.0,,Please login to access personal information.
+115,Personal,What is my GPA?,200,2.0599,True,1.0,,Please login to access personal information.
+116,Personal,My student ID?,200,2.0281,True,1.0,,Please login to access personal information.
+117,RAG,Is there a gym strictly for students?,200,2.6843,True,1.0,,"Yes, the Gym & Pool is for students only. It is located at Block E / R2 and is free of charge. The opening hours are 07:00 - 22:00."
+118,RAG,Bus schedule for Route B,200,3.2626,True,1.0,,The database has no information for shuttle bus route schedule details.
+119,Mixed,Tell me about Block A and my grades,200,2.0586,True,1.0,,Please login to access personal information.
+120,Edge,qwer asdf zxcv,200,2.424,True,1.0,,"I'm not quite sure what you mean by 'qwer asdf zxcv'. Perhaps you were testing the system? If you have a question for me, please ask in complete sentences."
+121,Korean,기숙사 비용 얼마야?,200,2.3398,True,1.0,,해당 정보를 데이터베이스에서 찾을 수 없습니다.
+122,Korean,도서관 위치 알려줘,200,12.9561,True,1.0,,요청하신 정보가 DB에 없습니다.
+123,Korean,내 성적 확인해줘,200,2.3324,True,1.0,,Please login to access personal information.
+124,Hallucination_Trap,What is the fee for the non-existent Mars campus?,200,2.0359,True,1.0,,The database has no information for this request.
+125,Hallucination_Trap,Who is Professor Gandalf?,200,2.1114,True,1.0,,The database has no information for this request.
+126,RAG,Where is Block A located?,200,14.6888,True,1.0,,"Block A is located at Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia."
+127,RAG,Tell me about the library facilities.,200,2.6777,True,1.0,,The database has no information for library details.
+128,RAG,What are the hostel fees for single room?,200,15.6692,True,1.0,,"Accommodation/hostel details: The rent price for a Single Room is RM 1350 and the deposit is RM 2000 in Block E, Kuala Lumpur. Another Single Room option is available in Springhill"
+129,RAG,Who is the head of the IT faculty?,200,10.1416,True,1.0,,"Professor Ts Dr Shayla Islam: role: Director ; Head of Research, major: Institute of Computer Science and Digital Innovation, email: shayla@ucsiuniversity.edu.my, profile_url: http"
+130,General,What is Python?,200,2.0607,True,1.0,,"I can answer general questions, but the AI service is busy right now. Please try again shortly."
+131,General,How do I cook pasta?,200,2.0859,True,1.0,,Here's a basic way to cook pasta: Bring a large pot of salted water to a boil. Add your pasta and cook according to package directions. Drain the pasta and serve with your favorite
+132,Personal,Check my grades,200,2.0715,True,1.0,,Please login to access personal information.
+133,Personal,What is my GPA?,200,2.1187,True,1.0,,Please login to access personal information.
+134,Personal,My student ID?,200,2.0439,True,1.0,,Please login to access personal information.
+135,RAG,Is there a gym strictly for students?,200,2.1281,True,1.0,,"Yes, the Gym & Pool is for students only. It is located at Block E / R2 and is free of charge. The opening hours are 07:00 - 22:00."
+136,RAG,Bus schedule for Route B,200,2.6682,True,1.0,,The database has no information for shuttle bus route schedule details.
+137,Mixed,Tell me about Block A and my grades,200,2.1283,True,1.0,,Please login to access personal information.
+138,Edge,qwer asdf zxcv,200,2.071,True,1.0,,"I'm not quite sure what you mean by 'qwer asdf zxcv'. Perhaps you were testing the system? If you have a question for me, please ask in complete sentences."
+139,Korean,기숙사 비용 얼마야?,200,2.2527,True,1.0,,해당 정보를 데이터베이스에서 찾을 수 없습니다.
+140,Korean,도서관 위치 알려줘,200,3.1432,True,1.0,,The AI service is temporarily busy. Please try again in a moment.
+141,Korean,내 성적 확인해줘,200,2.0753,True,1.0,,Please login to access personal information.
+142,Hallucination_Trap,What is the fee for the non-existent Mars campus?,200,2.0954,True,1.0,,The database has no information for this request.
+143,Hallucination_Trap,Who is Professor Gandalf?,200,2.1668,True,1.0,,The database has no information for this request.
+144,RAG,Where is Block A located?,200,3.3302,True,1.0,,"Block A: Name: Block A, Address: Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia, Latitude: 3.077331, Longitude: 101.737711, BLOCK A_B"
+145,RAG,Tell me about the library facilities.,200,3.2755,True,1.0,,The database has no information for library details.
+146,RAG,What are the hostel fees for single room?,200,7.3756,True,1.0,,"Accommodation/hostel details: The rent price for a Single Room is RM 1350 and the deposit is RM 2000 in Block E, Kuala Lumpur. Another Single Room option near UCSI Hospital costs R"
+147,RAG,Who is the head of the IT faculty?,200,5.5722,True,1.0,,"Professor Ts Dr Shayla Islam: role: Director ; Head of Research, major: Institute of Computer Science and Digital Innovation, email: shayla@ucsiuniversity.edu.my, profile_url: http"
+148,General,What is Python?,200,2.0423,True,1.0,,"I can answer general questions, but the AI service is busy right now. Please try again shortly."
+149,General,How do I cook pasta?,200,2.0593,True,1.0,,Here's a basic way to cook pasta: Bring a large pot of salted water to a boil. Add your pasta and cook according to package directions. Drain the pasta and serve with your favorite
+150,Personal,Check my grades,200,2.0669,True,1.0,,Please login to access personal information.
+151,Personal,What is my GPA?,200,2.0798,True,1.0,,Please login to access personal information.
+152,Personal,My student ID?,200,2.0972,True,1.0,,Please login to access personal information.
+153,RAG,Is there a gym strictly for students?,200,2.0865,True,1.0,,"Yes, the Gym & Pool is for students only. It is located at Block E / R2 and is free of charge. The opening hours are 07:00 - 22:00."
+154,RAG,Bus schedule for Route B,200,2.7096,True,1.0,,The database has no information for shuttle bus route schedule details.
+155,Mixed,Tell me about Block A and my grades,200,2.3476,True,1.0,,Please login to access personal information.
+156,Edge,qwer asdf zxcv,200,2.0885,True,1.0,,"I'm not quite sure what you mean by 'qwer asdf zxcv'. Perhaps you were testing the system? If you have a question for me, please ask in complete sentences."
+157,Korean,기숙사 비용 얼마야?,200,2.0528,True,1.0,,해당 정보를 데이터베이스에서 찾을 수 없습니다.
+158,Korean,도서관 위치 알려줘,200,5.8976,True,1.0,,요청하신 정보가 DB에 없습니다.
+159,Korean,내 성적 확인해줘,200,2.059,True,1.0,,Please login to access personal information.
+160,Hallucination_Trap,What is the fee for the non-existent Mars campus?,200,2.0755,True,1.0,,The database has no information for this request.
+161,Hallucination_Trap,Who is Professor Gandalf?,200,2.147,True,1.0,,The database has no information for this request.
+162,RAG,Where is Block A located?,200,8.8015,True,1.0,,"Block A is located at Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia."
+163,RAG,Tell me about the library facilities.,200,3.3752,True,1.0,,The database has no information for library details.
+164,RAG,What are the hostel fees for single room?,200,9.2677,True,1.0,,"Accommodation/hostel details: The rent price for a Single Room is RM 1350 and the deposit is RM 2000 in Block E, Kuala Lumpur. Another Single Room option is available in Springhill"
+165,RAG,Who is the head of the IT faculty?,200,11.4064,True,1.0,,"Professor Ts Dr Shayla Islam: role: Director ; Head of Research, major: Institute of Computer Science and Digital Innovation, email: shayla@ucsiuniversity.edu.my, profile_url: http"
+166,General,What is Python?,200,2.0759,True,1.0,,"I can answer general questions, but the AI service is busy right now. Please try again shortly."
+167,General,How do I cook pasta?,200,2.0757,True,1.0,,Here's a basic way to cook pasta: Bring a large pot of salted water to a boil. Add your pasta and cook according to package directions. Drain the pasta and serve with your favorite
+168,Personal,Check my grades,200,2.372,True,1.0,,Please login to access personal information.
+169,Personal,What is my GPA?,200,2.3432,True,1.0,,Please login to access personal information.
+170,Personal,My student ID?,200,2.0681,True,1.0,,Please login to access personal information.
+171,RAG,Is there a gym strictly for students?,200,2.0778,True,1.0,,"Yes, the Gym & Pool is for students only. It is located at Block E / R2 and is free of charge. The opening hours are 07:00 - 22:00."
+172,RAG,Bus schedule for Route B,200,2.696,True,1.0,,The database has no information for shuttle bus route schedule details.
+173,Mixed,Tell me about Block A and my grades,200,2.0418,True,1.0,,Please login to access personal information.
+174,Edge,qwer asdf zxcv,200,2.1226,True,1.0,,"I'm not quite sure what you mean by 'qwer asdf zxcv'. Perhaps you were testing the system? If you have a question for me, please ask in complete sentences."
+175,Korean,기숙사 비용 얼마야?,200,2.1173,True,1.0,,해당 정보를 데이터베이스에서 찾을 수 없습니다.
+176,Korean,도서관 위치 알려줘,200,8.84,True,1.0,,요청하신 정보가 DB에 없습니다.
+177,Korean,내 성적 확인해줘,200,2.0641,True,1.0,,Please login to access personal information.
+178,Hallucination_Trap,What is the fee for the non-existent Mars campus?,200,2.21,True,1.0,,The database has no information for this request.
+179,Hallucination_Trap,Who is Professor Gandalf?,200,2.2783,True,1.0,,The database has no information for this request.
+180,RAG,Where is Block A located?,200,26.5845,True,1.0,,"Block A is located at Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia."
+181,RAG,Tell me about the library facilities.,200,2.755,True,1.0,,The database has no information for library details.
+182,RAG,What are the hostel fees for single room?,200,13.583,True,1.0,,"Accommodation/hostel details: The rent price for a Single Room is RM 1350 and the deposit is RM 2000 in Block E, Kuala Lumpur. Another Single Room option near UCSI Hospital costs R"
+183,RAG,Who is the head of the IT faculty?,200,10.0347,True,1.0,,"Professor Ts Dr Shayla Islam: role: Director ; Head of Research, major: Institute of Computer Science and Digital Innovation, email: shayla@ucsiuniversity.edu.my, profile_url: http"
+184,General,What is Python?,200,2.5553,True,1.0,,"I can answer general questions, but the AI service is busy right now. Please try again shortly."
+185,General,How do I cook pasta?,200,2.0901,True,1.0,,Here's a basic way to cook pasta: Bring a large pot of salted water to a boil. Add your pasta and cook according to package directions. Drain the pasta and serve with your favorite
+186,Personal,Check my grades,200,2.0449,True,1.0,,Please login to access personal information.
+187,Personal,What is my GPA?,200,2.4428,True,1.0,,Please login to access personal information.
+188,Personal,My student ID?,200,2.2482,True,1.0,,Please login to access personal information.
+189,RAG,Is there a gym strictly for students?,200,2.0782,True,1.0,,"Yes, the Gym & Pool is for students only. It is located at Block E / R2 and is free of charge. The opening hours are 07:00 - 22:00."
+190,RAG,Bus schedule for Route B,200,2.718,True,1.0,,The database has no information for shuttle bus route schedule details.
+191,Mixed,Tell me about Block A and my grades,200,2.0604,True,1.0,,Please login to access personal information.
+192,Edge,qwer asdf zxcv,200,2.048,True,1.0,,"I'm not quite sure what you mean by 'qwer asdf zxcv'. Perhaps you were testing the system? If you have a question for me, please ask in complete sentences."
+193,Korean,기숙사 비용 얼마야?,200,2.321,True,1.0,,해당 정보를 데이터베이스에서 찾을 수 없습니다.
+194,Korean,도서관 위치 알려줘,200,14.4875,True,1.0,,요청하신 정보가 DB에 없습니다.
+195,Korean,내 성적 확인해줘,200,2.3658,True,1.0,,Please login to access personal information.
+196,Hallucination_Trap,What is the fee for the non-existent Mars campus?,200,2.322,True,1.0,,The database has no information for this request.
+197,Hallucination_Trap,Who is Professor Gandalf?,200,2.128,True,1.0,,The database has no information for this request.
+198,RAG,Where is Block A located?,200,15.3625,True,1.0,,"Block A is located at Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia."
+199,RAG,Tell me about the library facilities.,200,2.6692,True,1.0,,The database has no information for library details.
+200,RAG,What are the hostel fees for single room?,200,18.3713,True,1.0,,"Accommodation/hostel details: The rent price for a Single Room is RM 1350 and the deposit is RM 2000 in Block E, Kuala Lumpur. Another Single Room option is available in Springhill"
+201,RAG,Who is the head of the IT faculty?,200,17.8035,True,1.0,,"Professor Ts Dr Shayla Islam: role: Director ; Head of Research, major: Institute of Computer Science and Digital Innovation, email: shayla@ucsiuniversity.edu.my, profile_url: http"
+202,General,What is Python?,200,2.5088,True,1.0,,"I can answer general questions, but the AI service is busy right now. Please try again shortly."
+203,General,How do I cook pasta?,200,2.2842,True,1.0,,Here's a basic way to cook pasta: Bring a large pot of salted water to a boil. Add your pasta and cook according to package directions. Drain the pasta and serve with your favorite
+204,Personal,Check my grades,200,2.0573,True,1.0,,Please login to access personal information.
+205,Personal,What is my GPA?,200,2.0685,True,1.0,,Please login to access personal information.
+206,Personal,My student ID?,200,2.0798,True,1.0,,Please login to access personal information.
+207,RAG,Is there a gym strictly for students?,200,2.0828,True,1.0,,"Yes, the Gym & Pool is for students only. It is located at Block E / R2 and is free of charge. The opening hours are 07:00 - 22:00."
+208,RAG,Bus schedule for Route B,200,3.1205,True,1.0,,The database has no information for shuttle bus route schedule details.
+209,Mixed,Tell me about Block A and my grades,200,2.0952,True,1.0,,Please login to access personal information.
+210,Edge,qwer asdf zxcv,200,2.3586,True,1.0,,"I'm not quite sure what you mean by 'qwer asdf zxcv'. Perhaps you were testing the system? If you have a question for me, please ask in complete sentences."
+211,Korean,기숙사 비용 얼마야?,200,2.0668,True,1.0,,해당 정보를 데이터베이스에서 찾을 수 없습니다.
+212,Korean,도서관 위치 알려줘,200,16.0435,True,1.0,,요청하신 정보가 DB에 없습니다.
+213,Korean,내 성적 확인해줘,200,2.0427,True,1.0,,Please login to access personal information.
+214,Hallucination_Trap,What is the fee for the non-existent Mars campus?,200,2.0805,True,1.0,,The database has no information for this request.
+215,Hallucination_Trap,Who is Professor Gandalf?,200,2.13,True,1.0,,The database has no information for this request.
+216,RAG,Where is Block A located?,200,21.996,True,1.0,,"Block A is located at Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia."
+217,RAG,Tell me about the library facilities.,200,2.7163,True,1.0,,The database has no information for library details.
+218,RAG,What are the hostel fees for single room?,200,16.7969,True,1.0,,"Accommodation/hostel details: The rent price for a Single Room is RM 1350 and the deposit is RM 2000 in Block E, Kuala Lumpur. Another Single Room option is available in Springhill"
+219,RAG,Who is the head of the IT faculty?,200,14.8106,True,1.0,,"Professor Ts Dr Shayla Islam: role: Director ; Head of Research, major: Institute of Computer Science and Digital Innovation, email: shayla@ucsiuniversity.edu.my, profile_url: http"
+220,General,What is Python?,200,2.0912,True,1.0,,"I can answer general questions, but the AI service is busy right now. Please try again shortly."
+221,General,How do I cook pasta?,200,2.049,True,1.0,,Here's a basic way to cook pasta: Bring a large pot of salted water to a boil. Add your pasta and cook according to package directions. Drain the pasta and serve with your favorite
+222,Personal,Check my grades,200,2.048,True,1.0,,Please login to access personal information.
+223,Personal,What is my GPA?,200,2.1041,True,1.0,,Please login to access personal information.
+224,Personal,My student ID?,200,2.045,True,1.0,,Please login to access personal information.
+225,RAG,Is there a gym strictly for students?,200,2.0573,True,1.0,,"Yes, the Gym & Pool is for students only. It is located at Block E / R2 and is free of charge. The opening hours are 07:00 - 22:00."
+226,RAG,Bus schedule for Route B,200,2.8837,True,1.0,,The database has no information for shuttle bus route schedule details.
+227,Mixed,Tell me about Block A and my grades,200,2.0819,True,1.0,,Please login to access personal information.
+228,Edge,qwer asdf zxcv,200,2.0818,True,1.0,,"I'm not quite sure what you mean by 'qwer asdf zxcv'. Perhaps you were testing the system? If you have a question for me, please ask in complete sentences."
+229,Korean,기숙사 비용 얼마야?,200,2.3725,True,1.0,,해당 정보를 데이터베이스에서 찾을 수 없습니다.
+230,Korean,도서관 위치 알려줘,200,9.981,True,1.0,,요청하신 정보가 DB에 없습니다.
+231,Korean,내 성적 확인해줘,200,2.0743,True,1.0,,Please login to access personal information.
+232,Hallucination_Trap,What is the fee for the non-existent Mars campus?,200,2.2747,True,1.0,,The database has no information for this request.
+233,Hallucination_Trap,Who is Professor Gandalf?,200,2.1377,True,1.0,,The database has no information for this request.
+234,RAG,Where is Block A located?,200,11.4583,True,1.0,,"Block A is located at Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia."
+235,RAG,Tell me about the library facilities.,200,2.6873,True,1.0,,The database has no information for library details.
+236,RAG,What are the hostel fees for single room?,200,13.5403,True,1.0,,"Accommodation/hostel details: The rent price for a Single Room is RM 1350 and the deposit is RM 2000 in Block E, Kuala Lumpur. Another Single Room option is available in Springhill"
+237,RAG,Who is the head of the IT faculty?,200,11.1173,True,1.0,,"Professor Ts Dr Shayla Islam: role: Director ; Head of Research, major: Institute of Computer Science and Digital Innovation, email: shayla@ucsiuniversity.edu.my, profile_url: http"
+238,General,What is Python?,200,2.1573,True,1.0,,"I can answer general questions, but the AI service is busy right now. Please try again shortly."
+239,General,How do I cook pasta?,200,2.0721,True,1.0,,Here's a basic way to cook pasta: Bring a large pot of salted water to a boil. Add your pasta and cook according to package directions. Drain the pasta and serve with your favorite
+240,Personal,Check my grades,200,2.3377,True,1.0,,Please login to access personal information.
+241,Personal,What is my GPA?,200,2.0979,True,1.0,,Please login to access personal information.
+242,Personal,My student ID?,200,2.0626,True,1.0,,Please login to access personal information.
+243,RAG,Is there a gym strictly for students?,200,2.0837,True,1.0,,"Yes, the Gym & Pool is for students only. It is located at Block E / R2 and is free of charge. The opening hours are 07:00 - 22:00."
+244,RAG,Bus schedule for Route B,200,3.5315,True,1.0,,The database has no information for shuttle bus route schedule details.
+245,Mixed,Tell me about Block A and my grades,200,2.0392,True,1.0,,Please login to access personal information.
+246,Edge,qwer asdf zxcv,200,2.0547,True,1.0,,"I'm not quite sure what you mean by 'qwer asdf zxcv'. Perhaps you were testing the system? If you have a question for me, please ask in complete sentences."
+247,Korean,기숙사 비용 얼마야?,200,2.1393,True,1.0,,해당 정보를 데이터베이스에서 찾을 수 없습니다.
+248,Korean,도서관 위치 알려줘,200,15.8171,True,1.0,,요청하신 정보가 DB에 없습니다.
+249,Korean,내 성적 확인해줘,200,2.0963,True,1.0,,Please login to access personal information.
+250,Hallucination_Trap,What is the fee for the non-existent Mars campus?,200,2.0804,True,1.0,,The database has no information for this request.
+251,Hallucination_Trap,Who is Professor Gandalf?,200,2.1283,True,1.0,,The database has no information for this request.
+252,RAG,Where is Block A located?,200,26.899,True,1.0,,"Block A is located at Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia."
+253,RAG,Tell me about the library facilities.,200,2.7223,True,1.0,,The database has no information for library details.
+254,RAG,What are the hostel fees for single room?,200,23.008,True,1.0,,"Accommodation/hostel details: The rent price for a Single Room is RM 1350 and the deposit is RM 2000 in Block E, Kuala Lumpur. Another Single Room option is available in Springhill"
+255,RAG,Who is the head of the IT faculty?,200,12.4973,True,1.0,,"Professor Ts Dr Shayla Islam: role: Director ; Head of Research, major: Institute of Computer Science and Digital Innovation, email: shayla@ucsiuniversity.edu.my, profile_url: http"
+256,General,What is Python?,200,2.1884,True,1.0,,"I can answer general questions, but the AI service is busy right now. Please try again shortly."
+257,General,How do I cook pasta?,200,2.0885,True,1.0,,Here's a basic way to cook pasta: Bring a large pot of salted water to a boil. Add your pasta and cook according to package directions. Drain the pasta and serve with your favorite
+258,Personal,Check my grades,200,2.0354,True,1.0,,Please login to access personal information.
+259,Personal,What is my GPA?,200,2.1053,True,1.0,,Please login to access personal information.
+260,Personal,My student ID?,200,2.0586,True,1.0,,Please login to access personal information.
+261,RAG,Is there a gym strictly for students?,200,2.0907,True,1.0,,"Yes, the Gym & Pool is for students only. It is located at Block E / R2 and is free of charge. The opening hours are 07:00 - 22:00."
+262,RAG,Bus schedule for Route B,200,3.1108,True,1.0,,The database has no information for shuttle bus route schedule details.
+263,Mixed,Tell me about Block A and my grades,200,2.2137,True,1.0,,Please login to access personal information.
+264,Edge,qwer asdf zxcv,200,2.369,True,1.0,,"I'm not quite sure what you mean by 'qwer asdf zxcv'. Perhaps you were testing the system? If you have a question for me, please ask in complete sentences."
+265,Korean,기숙사 비용 얼마야?,200,2.1155,True,1.0,,해당 정보를 데이터베이스에서 찾을 수 없습니다.
+266,Korean,도서관 위치 알려줘,200,12.6637,True,1.0,,요청하신 정보가 DB에 없습니다.
+267,Korean,내 성적 확인해줘,200,2.0421,True,1.0,,Please login to access personal information.
+268,Hallucination_Trap,What is the fee for the non-existent Mars campus?,200,2.0902,True,1.0,,The database has no information for this request.
+269,Hallucination_Trap,Who is Professor Gandalf?,200,2.1367,True,1.0,,The database has no information for this request.
+270,RAG,Where is Block A located?,200,9.8696,True,1.0,,"Block A is located at Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia."
+271,RAG,Tell me about the library facilities.,200,2.9684,True,1.0,,The database has no information for library details.
+272,RAG,What are the hostel fees for single room?,200,8.6114,True,1.0,,"Accommodation/hostel details: The rent price for a Single Room is RM 1350 and the deposit is RM 2000 in Block E, Kuala Lumpur. Another Single Room option is available in Springhill"
+273,RAG,Who is the head of the IT faculty?,200,6.9651,True,1.0,,"Professor Ts Dr Shayla Islam: role: Director ; Head of Research, major: Institute of Computer Science and Digital Innovation, email: shayla@ucsiuniversity.edu.my, profile_url: http"
+274,General,What is Python?,200,2.0726,True,1.0,,"I can answer general questions, but the AI service is busy right now. Please try again shortly."
+275,General,How do I cook pasta?,200,2.4678,True,1.0,,Here's a basic way to cook pasta: Bring a large pot of salted water to a boil. Add your pasta and cook according to package directions. Drain the pasta and serve with your favorite
+276,Personal,Check my grades,200,2.0287,True,1.0,,Please login to access personal information.
+277,Personal,What is my GPA?,200,2.1118,True,1.0,,Please login to access personal information.
+278,Personal,My student ID?,200,2.0492,True,1.0,,Please login to access personal information.
+279,RAG,Is there a gym strictly for students?,200,2.3612,True,1.0,,"Yes, the Gym & Pool is for students only. It is located at Block E / R2 and is free of charge. The opening hours are 07:00 - 22:00."
+280,RAG,Bus schedule for Route B,200,2.7493,True,1.0,,The database has no information for shuttle bus route schedule details.
+281,Mixed,Tell me about Block A and my grades,200,2.0414,True,1.0,,Please login to access personal information.
+282,Edge,qwer asdf zxcv,200,2.0596,True,1.0,,"I'm not quite sure what you mean by 'qwer asdf zxcv'. Perhaps you were testing the system? If you have a question for me, please ask in complete sentences."
+283,Korean,기숙사 비용 얼마야?,200,2.0533,True,1.0,,해당 정보를 데이터베이스에서 찾을 수 없습니다.
+284,Korean,도서관 위치 알려줘,200,8.2618,True,1.0,,요청하신 정보가 DB에 없습니다.
+285,Korean,내 성적 확인해줘,200,2.0487,True,1.0,,Please login to access personal information.
+286,Hallucination_Trap,What is the fee for the non-existent Mars campus?,200,2.1481,True,1.0,,The database has no information for this request.
+287,Hallucination_Trap,Who is Professor Gandalf?,200,2.1583,True,1.0,,The database has no information for this request.
+288,RAG,Where is Block A located?,200,9.9777,True,1.0,,"Block A is located at Block A, Jalan Mandarina Damai 1, Bukit Mandarina, Petaling, 56000, WP Kuala Lumpur, Malaysia."
+289,RAG,Tell me about the library facilities.,200,2.8571,True,1.0,,The database has no information for library details.
+290,RAG,What are the hostel fees for single room?,200,12.0252,True,1.0,,"Accommodation/hostel details: The rent price for a Single Room is RM 1350 and the deposit is RM 2000 in Block E, Kuala Lumpur. Another Single Room option near UCSI Hospital costs R"
+291,RAG,Who is the head of the IT faculty?,200,6.6319,True,1.0,,"Professor Ts Dr Shayla Islam: role: Director ; Head of Research, major: Institute of Computer Science and Digital Innovation, email: shayla@ucsiuniversity.edu.my, profile_url: http"
+292,General,What is Python?,200,2.6301,True,1.0,,"I can answer general questions, but the AI service is busy right now. Please try again shortly."
+293,General,How do I cook pasta?,200,2.077,True,1.0,,Here's a basic way to cook pasta: Bring a large pot of salted water to a boil. Add your pasta and cook according to package directions. Drain the pasta and serve with your favorite
+294,Personal,Check my grades,200,2.0244,True,1.0,,Please login to access personal information.
+295,Personal,What is my GPA?,200,2.0452,True,1.0,,Please login to access personal information.
+296,Personal,My student ID?,200,2.0358,True,1.0,,Please login to access personal information.
+297,RAG,Is there a gym strictly for students?,200,2.4965,True,1.0,,"Yes, the Gym & Pool is for students only. It is located at Block E / R2 and is free of charge. The opening hours are 07:00 - 22:00."
+298,RAG,Bus schedule for Route B,200,2.7216,True,1.0,,The database has no information for shuttle bus route schedule details.
+299,Mixed,Tell me about Block A and my grades,200,2.4582,True,1.0,,Please login to access personal information.

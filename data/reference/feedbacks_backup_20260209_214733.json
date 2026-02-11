@@ -1,0 +1,11 @@
+[
+  {
+    "id": 5,
+    "timestamp": "2026-02-09T12:23:55.743021",
+    "session_id": "jwt_session",
+    "user_message": "What is the annual tuition fee for the Diploma in Opticianry? Please provide it in Malaysian Ringgit.",
+    "ai_response": "The annual tuition fee for the Diploma in Opticianry is RM 28,800 for the 2024/2025 academic year.",
+    "rating": "negative",
+    "comment": null
+  }
+]

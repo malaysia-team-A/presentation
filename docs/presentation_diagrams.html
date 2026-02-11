@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Architecture Diagrams for PPT</title>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'dark',
+            themeVariables: {
+                primaryColor: '#61afef',
+                primaryTextColor: '#fff',
+                primaryBorderColor: '#61afef',
+                lineColor: '#abb2bf',
+                secondaryColor: '#98c379',
+                tertiaryColor: '#e06c75'
+            }
+        });
+    </script>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+        }
+
+        h1 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .diagram-container {
+            width: 100%;
+            max-width: 1000px;
+            background-color: #282c34;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+            border: 1px solid #3e4451;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .label {
+            width: 100%;
+            border-bottom: 1px solid #3e4451;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            color: #61afef;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .description {
+            width: 100%;
+            font-size: 0.95rem;
+            color: #abb2bf;
+            margin-bottom: 20px;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        /* Center mermaid output */
+        .mermaid {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>System Architecture & Logic Flows</h1>
+    <p style="text-align: center; color: #abb2bf;">Visual diagrams for your presentation. Capture each block using
+        Win+Shift+S.</p>
+
+    <!-- 1. Feedback / Self-Learning -->
+    <div class="diagram-container">
+        <div class="label">1. Feedback System (Self-Learning Loop)</div>
+        <div class="description">
+            Process where user feedback (Thumbs Up) promotes a response to "Learned Memory", improving future answers.
+        </div>
+        <div class="mermaid">
+            sequenceDiagram
+            participant User
+            participant API as Chat API
+            participant DB as MongoDB (Feedback)
+            participant QA as LearnedQA Collection
+
+            User->>API: Click "Thumbs Up" (Positive)
+            API->>DB: Save Feedback (Rating: Positive)
+            Note over DB, QA: Self-Learning Trigger
+            DB->>QA: Promote to Learned Pattern
+            QA-->>API: Confirmed
+            API-->>User: "Thanks for feedback!"
+
+            Note right of QA: Next time, this answer<br />is verified & prioritized.
+        </div>
+    </div>
+
+    <!-- 2. DB Connection -->
+    <div class="diagram-container">
+        <div class="label">2. Database Connection Architecture</div>
+        <div class="description">
+            Asynchronous Non-blocking connection ensuring high concurrency and stability using Motor & MongoDB Atlas.
+        </div>
+        <div class="mermaid">
+            flowchart LR
+            App["FastAPI App"]
+            Driver["Motor Async Driver"]
+            Atlas[("MongoDB Atlas Cloud")]
+
+            subgraph Pool ["Connection Pool"]
+            T1["Thread 1"]
+            T2["Thread 2"]
+            T3["Thread 3"]
+            end
+
+            App -->|Async Init| Driver
+            Driver -->|Manage| Pool
+            Pool <-->|Persistent TCP| Atlas
+
+                style App fill:#61afef,stroke:#fff,stroke-width:2px,color:#000
+                style Atlas fill:#98c379,stroke:#fff,stroke-width:2px,color:#000
+        </div>
+    </div>
+
+    <!-- 3. Chatbot Service Logic -->
+    <div class="diagram-container">
+        <div class="label">3. Chatbot Service Logic (Clean Architecture)</div>
+        <div class="description">
+            End-to-end request handling flow: Auth -> Classification -> Routing -> Generation -> Validation.
+        </div>
+        <div class="mermaid">
+            flowchart TD
+            Request(["User Request"]) --> Auth{"Auth Check"}
+            Auth -->|"Valid"| Classify["Intent Classifier"]
+            Auth -->|"Invalid"| Reject(["401 Unauthorized"])
+
+            Classify -->|"Personal Info"| P_Handler["Personal Data Handler"]
+            Classify -->|"University Info"| RAG_Handler["RAG Handler"]
+            Classify -->|"General"| Gen_Handler["General LLM Handler"]
+
+            P_Handler --> Response
+            RAG_Handler --> Response
+            Gen_Handler --> Response
+
+            Response["Response Generation"] --> Validate{"Validator"}
+            Validate -->|"Safe"| Final(["Send to User"])
+            Validate -->|"Hallucination"| Fix["Error Correction"] --> Final
+        </div>
+    </div>
+
+    <!-- 4. RAG Implementation -->
+    <div class="diagram-container">
+        <div class="label">4. RAG (Retrieval Augmented Generation) Pipeline</div>
+        <div class="description">
+            Hybrid retrieval system combining Vector Search (Semantic) and Database Search (Keyword/Structured).
+        </div>
+        <div class="mermaid">
+            flowchart LR
+            Query("User Query") --> Embed["Embedding Model"]
+            Query --> KW["Keyword Extraction"]
+
+            Embed --> VectorDB[("Vector Index")]
+            KW --> Mongo[("MongoDB")]
+
+            VectorDB -->|"Semantic Matches"| Context
+            Mongo -->|"Structured Data"| Context
+
+            Context{"Merged Context"} -->|"Top-k Re-ranking"| LLM["LLM Generation"]
+            LLM --> Answer("Final Answer")
+
+            style LLM fill:#e06c75,stroke:#fff,stroke-width:2px,color:#fff
+            style Context fill:#e5c07b,stroke:#fff,stroke-width:2px,color:#000
+        </div>
+    </div>
+
+    <!-- 5. LLM Connection & Fine-tuning -->
+    <div class="diagram-container">
+        <div class="label">5. LLM Integration & Optimization</div>
+        <div class="description">
+            Integration with Google Gemini Pro, including Prompt Engineering and Context Management.
+        </div>
+        <div class="mermaid">
+            sequenceDiagram
+            participant Engine as AI Engine
+            participant Circuit as Circuit Breaker
+            participant Gemini as Google Gemini API
+
+            Engine->>Engine: Build System Prompt<br />(Role + Context + History)
+            Engine->>Circuit: Request Execution
+            Circuit->>Gemini: Async Generate Content
+
+            alt Success
+            Gemini-->>Engine: Generated Text (JSON)
+            else Failure / Timeout
+            Gemini--xCircuit: Error
+            Circuit-->>Engine: Fallback / Retry
+            end
+
+            Engine->>Engine: Parse & Format Output
+        </div>
+    </div>
+
+    <!-- 6. Auth System -->
+    <div class="diagram-container">
+        <div class="label">6. Authentication System (JWT)</div>
+        <div class="description">
+            Secure Stateless Authentication using JSON Web Tokens (JWT) and Password Hashing.
+        </div>
+        <div class="mermaid">
+            sequenceDiagram
+            participant Client
+            participant Auth as Auth API
+            participant DB as Student DB
+
+            Client->>Auth: POST /login (ID, Password)
+            Auth->>DB: Fetch Student Profile
+            DB-->>Auth: Profile + Hashed PWD
+
+            Auth->>Auth: Verify Hash (bcrypt)
+
+            alt Valid
+            Auth->>Client: Return Access Token (JWT)
+            else Invalid
+            Auth-->>Client: 401 Unauthorized
+            end
+
+            Note over Client, Auth: Subsequent Requests
+            Client->>Auth: Header: Bearer [Token]
+            Auth->>Auth: Decode & Verify Signature
+        </div>
+    </div>
+
+    <!-- 7. UX Response Formatting (v3.2.1) -->
+    <div class="diagram-container">
+        <div class="label">7. UX Response Formatting Pipeline (v3.2.1)</div>
+        <div class="description">
+            End-to-end flow for structured response formatting: LLM outputs Label:Value format, Backend deduplicates
+            rich content, Frontend auto-renders structured KV layout and strips duplicate URLs.
+        </div>
+        <div class="mermaid">
+            flowchart TD
+            LLM["LLM (Gemini)"] -->|"Label: Value format"| Response["Response Text"]
+            RAG["RAG Context"] -->|"URLs extracted"| Extract["_extract_rich_content()"]
+
+            Extract --> Dedup{"Deduplication"}
+            Dedup -->|"Staff: max 1 link"| RC["rich_content payload"]
+            Dedup -->|"Building: 1 img + 1 map"| RC
+
+            Response --> Frontend["Frontend Renderer"]
+            RC --> Frontend
+
+            Frontend --> Strip["stripRichUrls()"]
+            Strip -->|"Remove URLs from text"| KV{"renderKeyValueBlock()"}
+            KV -->|"2+ Label:Value pairs"| Styled[".kv-block Layout"]
+            KV -->|"Normal text"| Markdown["renderMarkdown()"]
+
+            RC --> Buttons["buildRichContentHtml()"]
+            Buttons --> Images["Inline Images"]
+            Buttons --> Links["Link Buttons"]
+
+            style LLM fill:#e06c75,stroke:#fff,stroke-width:2px,color:#fff
+            style Styled fill:#98c379,stroke:#fff,stroke-width:2px,color:#000
+            style Dedup fill:#e5c07b,stroke:#fff,stroke-width:2px,color:#000
+        </div>
+    </div>
+
+    <!-- 8. Enhanced Intent Classification (v3.3.0) -->
+    <div class="diagram-container">
+        <div class="label">8. Enhanced Intent Classification (v3.3.0)</div>
+        <div class="description">
+            Advanced hybrid classification pipeline combining keyword rules, vector search, and LLM reasoning.
+            Automatically detects query types (Specific vs Aggregate) and entity types to optimize routing.
+        </div>
+        <div class="mermaid">
+            flowchart TD
+            Input[User Input] --> Config[Intent Config<br />(Single Source of Truth)]
+            Config --> Classify[Intent Classifier]
+
+            subgraph Classifier_Logic
+            Classify -->|Detect| Intent[Intent<br />(ucsi_staff/hostel...)]
+            Classify -->|Detect| QType[Query Type<br />(Specific / Aggregate)]
+            Classify -->|Detect| EType[Entity Type<br />(Staff/Building...)]
+            end
+
+            QType -->|Aggregate<br />(how many, list all)| RouteLLM[Route: LLM-First<br />(General Knowledge)]
+            QType -->|Specific<br />(who is, where is)| RouteRAG[Route: RAG Search<br />(Retrieval)]
+
+            RouteRAG --> Search[Vector Search]
+            RouteLLM --> Gen[Generation]
+
+            EType -.->|Filter| Rich[Rich Content Filter]
+            RouteRAG --> Rich
+            Rich --> Final[Response]
+            Gen --> Final
+        </div>
+    </div>
+
+</body>
+
+</html>
